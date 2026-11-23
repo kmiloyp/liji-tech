@@ -1,0 +1,456 @@
+{
+  "hazardClasses": [
+    {
+      "style": "dm-red",
+      "number": "2",
+      "en": "Flammable gas",
+      "es": "Gas inflamable"
+    },
+    {
+      "style": "dm-green",
+      "number": "2",
+      "en": "Non-flammable gas",
+      "es": "Gas no inflamable"
+    },
+    {
+      "style": "white",
+      "number": "2",
+      "en": "Toxic gas",
+      "es": "Gas tóxico"
+    },
+    {
+      "style": "dm-red",
+      "number": "3",
+      "en": "Flammable liquid",
+      "es": "Líquido inflamable"
+    },
+    {
+      "style": "dm-stripe",
+      "number": "4",
+      "en": "Flammable solid",
+      "es": "Sólido inflamable"
+    },
+    {
+      "style": "dm-wr",
+      "number": "4",
+      "en": "Spontaneously combustible",
+      "es": "Combustión espontánea"
+    },
+    {
+      "style": "dm-yellow",
+      "number": "5.1",
+      "en": "Oxidizer",
+      "es": "Comburente"
+    },
+    {
+      "style": "dm-ry",
+      "number": "5.2",
+      "en": "Organic peroxide",
+      "es": "Peróxido orgánico"
+    },
+    {
+      "style": "white",
+      "number": "6",
+      "en": "Toxic, inhalation hazard",
+      "es": "Tóxico, riesgo por inhalación"
+    },
+    {
+      "style": "dm-wb",
+      "number": "8",
+      "en": "Corrosive",
+      "es": "Corrosivo"
+    },
+    {
+      "style": "dm-nine",
+      "number": "9",
+      "en": "Miscellaneous",
+      "es": "Misceláneos"
+    }
+  ],
+  "airCargoLabels": [
+    {
+      "en": "Cargo Aircraft Only",
+      "es": "Solo avión de carga (Cargo Aircraft Only)",
+      "size": "4.5 × 4.75 in"
+    },
+    {
+      "en": "Magnetized Material",
+      "es": "Material magnetizado",
+      "size": "4.5 × 3.5 in"
+    },
+    {
+      "en": "Limited Quantity, ground and air (Y)",
+      "es": "Cantidad limitada, terrestre y aérea (Y)",
+      "size": "2 × 2 · 4 × 4 in"
+    },
+    {
+      "en": "Dry Ice UN1845, Class 9",
+      "es": "Hielo seco UN1845, Clase 9",
+      "size": "4 × 5 in"
+    },
+    {
+      "en": "Time & Temperature Sensitive",
+      "es": "Sensible a tiempo y temperatura",
+      "size": "4 × 4 in"
+    },
+    {
+      "en": "Perishable",
+      "es": "Perecedero",
+      "size": "3 × 4 · 3 × 5 in"
+    },
+    {
+      "en": "Live Animals",
+      "es": "Animales vivos",
+      "size": "4 × 6 in"
+    },
+    {
+      "en": "Rush AOG",
+      "es": "Rush AOG",
+      "size": "4 × 4 in"
+    },
+    {
+      "en": "Overpack",
+      "es": "Overpack (sobreembalaje)",
+      "size": "2 × 6 in"
+    },
+    {
+      "en": "Consumer Commodity",
+      "es": "Consumer Commodity",
+      "size": "4 × 5 in"
+    },
+    {
+      "en": "Marine Pollutant",
+      "es": "Contaminante marino",
+      "size": "4 × 4 in"
+    }
+  ],
+  "handlingLabels": [
+    {
+      "en": "Fragile",
+      "es": "Frágil"
+    },
+    {
+      "en": "Fragile Glass",
+      "es": "Vidrio frágil"
+    },
+    {
+      "en": "Fragile Liquid",
+      "es": "Líquido frágil"
+    },
+    {
+      "en": "This Side Up, red or black arrows",
+      "es": "Este lado arriba, flechas rojas o negras"
+    },
+    {
+      "en": "Please Handle with Care",
+      "es": "Manéjese con cuidado"
+    },
+    {
+      "en": "Contains Liquid",
+      "es": "Contiene líquido"
+    },
+    {
+      "en": "Keep Dry",
+      "es": "Mantener seco"
+    },
+    {
+      "en": "Do Not Stack",
+      "es": "No apilar"
+    },
+    {
+      "en": "Do Not Double Stack",
+      "es": "No apilar doble"
+    },
+    {
+      "en": "Do Not Freeze or Refrigerate",
+      "es": "No congelar ni refrigerar"
+    },
+    {
+      "en": "Do Not Use Blades to Open",
+      "es": "No abrir con cuchilla"
+    },
+    {
+      "en": "Delicate Instruments",
+      "es": "Instrumentos delicados"
+    },
+    {
+      "en": "Mixed Carton",
+      "es": "Caja mixta"
+    },
+    {
+      "en": "Partial Carton",
+      "es": "Caja parcial"
+    },
+    {
+      "en": "Mixed Merchandise",
+      "es": "Mercancía mixta"
+    }
+  ],
+  "thermalColors": {
+    "directThermalOrThermalTransfer": [
+      {
+        "code": "BL-01",
+        "ref": "P. 290",
+        "hexAprox": "#B9D9EB"
+      },
+      {
+        "code": "BL-03",
+        "ref": "P. 299",
+        "hexAprox": "#00A3E0"
+      },
+      {
+        "code": "BL-04",
+        "ref": "P. 306",
+        "hexAprox": "#00B5E2"
+      },
+      {
+        "code": "BL-05",
+        "ref": "P. 319",
+        "hexAprox": "#7DD3DA"
+      },
+      {
+        "code": "BL-06",
+        "ref": "P. 312",
+        "hexAprox": "#00A9CE"
+      },
+      {
+        "code": "GR-04",
+        "ref": "P. 365",
+        "hexAprox": "#C2E189"
+      },
+      {
+        "code": "GR-05",
+        "ref": "P. 375",
+        "hexAprox": "#97D700"
+      },
+      {
+        "code": "YL-07",
+        "ref": "P. 100",
+        "hexAprox": "#F6EB61"
+      },
+      {
+        "code": "YL-08",
+        "ref": "Yellow",
+        "hexAprox": "#FEDD00"
+      },
+      {
+        "code": "OR-10",
+        "ref": "P. 1555",
+        "hexAprox": "#FFB990"
+      },
+      {
+        "code": "OR-12",
+        "ref": "P. 021",
+        "hexAprox": "#FE5000"
+      },
+      {
+        "code": "OR-13",
+        "ref": "P. 137",
+        "hexAprox": "#FFA300"
+      },
+      {
+        "code": "OR-14",
+        "ref": "P. 123",
+        "hexAprox": "#FFC72C"
+      },
+      {
+        "code": "LV-14",
+        "ref": "P. 530",
+        "hexAprox": "#D7C6E6"
+      },
+      {
+        "code": "RD-16",
+        "ref": "P. 485",
+        "hexAprox": "#DA291C"
+      },
+      {
+        "code": "LP-17",
+        "ref": "P. 196",
+        "hexAprox": "#ECC7CD"
+      },
+      {
+        "code": "TM-20",
+        "ref": "P. 466",
+        "hexAprox": "#C6AA76"
+      },
+      {
+        "code": "Gray-21",
+        "ref": "Cool Gray",
+        "hexAprox": "#D0D0CE"
+      }
+    ],
+    "thermalTransferOnly": [
+      {
+        "code": "BL-02",
+        "ref": "Reflex",
+        "hexAprox": "#001489"
+      },
+      {
+        "code": "GR-03",
+        "ref": "P. 335",
+        "hexAprox": "#007B5F"
+      },
+      {
+        "code": "GR-05A",
+        "ref": "P. 802",
+        "hexAprox": "#44D62C"
+      },
+      {
+        "code": "GR-06",
+        "ref": "P. 347",
+        "hexAprox": "#009A44"
+      },
+      {
+        "code": "YL-09",
+        "ref": "Chartreuse",
+        "hexAprox": "#E3E935"
+      },
+      {
+        "code": "OR-11",
+        "ref": "P. 810",
+        "hexAprox": "#FFCC1E"
+      },
+      {
+        "code": "OR-12A",
+        "ref": "P. 804",
+        "hexAprox": "#FFAA4D"
+      },
+      {
+        "code": "PP-13",
+        "ref": "Purple",
+        "hexAprox": "#BB29BB"
+      },
+      {
+        "code": "RD-13",
+        "ref": "Rubine",
+        "hexAprox": "#CE0058"
+      },
+      {
+        "code": "RD-14",
+        "ref": "Rodamine",
+        "hexAprox": "#E10098"
+      },
+      {
+        "code": "RD-15",
+        "ref": "Warm Red",
+        "hexAprox": "#F9423A"
+      },
+      {
+        "code": "RD-16A",
+        "ref": "P. 805",
+        "hexAprox": "#FF7276"
+      },
+      {
+        "code": "PK-18",
+        "ref": "P. 806",
+        "hexAprox": "#FF3EB5"
+      },
+      {
+        "code": "BR-19",
+        "ref": "P. 4635",
+        "hexAprox": "#946037"
+      },
+      {
+        "code": "BR-19A",
+        "ref": "P. 483",
+        "hexAprox": "#653024"
+      },
+      {
+        "code": "GD-22",
+        "ref": "P. 472",
+        "hexAprox": "#E59E6D"
+      }
+    ],
+    "circles_in": [
+      1,
+      1.5,
+      2,
+      2.5,
+      3,
+      4,
+      5
+    ]
+  },
+  "ribbons": [
+    {
+      "printer": "Zebra",
+      "size": "110 mm × 74 m"
+    },
+    {
+      "printer": "Datamax",
+      "size": "110 mm × 360 m"
+    },
+    {
+      "printer": "Zebra",
+      "size": "110 mm × 450 m"
+    }
+  ],
+  "guide": [
+    {
+      "mark": "UN3480",
+      "en": "Lithium ion batteries shipped on their own",
+      "es": "Baterías de ion de litio enviadas solas",
+      "catalogSize": "4.5 × 5 in"
+    },
+    {
+      "mark": "UN3481",
+      "en": "Lithium ion batteries contained in or packed with equipment",
+      "es": "Baterías de ion de litio dentro de un equipo o embaladas con él",
+      "catalogSize": "4.5 × 5 in"
+    },
+    {
+      "mark": "UN3090",
+      "en": "Lithium metal batteries shipped on their own",
+      "es": "Baterías de metal litio enviadas solas",
+      "catalogSize": "4.5 × 5 in"
+    },
+    {
+      "mark": "UN3091",
+      "en": "Lithium metal batteries contained in or packed with equipment",
+      "es": "Baterías de metal litio dentro de un equipo o embaladas con él",
+      "catalogSize": "4.5 × 5 in"
+    },
+    {
+      "mark": "UN1845",
+      "en": "Dry ice (carbon dioxide, solid), Class 9",
+      "es": "Hielo seco (dióxido de carbono sólido), Clase 9",
+      "catalogSize": "4 × 5 in"
+    },
+    {
+      "mark": "UN1266",
+      "en": "Perfumery products with flammable solvents, Class 3",
+      "es": "Productos de perfumería con disolventes inflamables, Clase 3",
+      "catalogSize": "4 × 5 in"
+    },
+    {
+      "mark": "UN2794",
+      "en": "Wet batteries filled with acid, Class 8",
+      "es": "Baterías húmedas con ácido, Clase 8",
+      "catalogSize": "10.75 × 10.75 in"
+    },
+    {
+      "mark": "Cargo Aircraft Only",
+      "en": "Package allowed on cargo aircraft, not on passenger aircraft",
+      "es": "Bulto permitido en avión de carga, no en avión de pasajeros",
+      "catalogSize": "4.5 × 4.75 in"
+    },
+    {
+      "mark": "Limited Quantity / Y",
+      "en": "Small inner packages shipped under limited quantity rules. The Y mark is the air version",
+      "es": "Envases interiores pequeños bajo las reglas de cantidad limitada. La marca Y es la versión aérea",
+      "catalogSize": "2 × 2 · 4 × 4 in"
+    },
+    {
+      "mark": "Overpack",
+      "en": "Several packages inside one outer pack that hides their labels",
+      "es": "Varios bultos dentro de un embalaje exterior que tapa sus etiquetas",
+      "catalogSize": "2 × 6 in"
+    },
+    {
+      "mark": "Rush AOG",
+      "en": "Aircraft on Ground: a part needed to return an aircraft to service",
+      "es": "Aircraft on Ground: pieza necesaria para que un avión vuelva a operar",
+      "catalogSize": "4 × 4 in"
+    }
+  ]
+}

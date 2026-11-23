@@ -1,26 +1,358 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+/* =========================================================
+   Liji Tech · sistema de diseño (propuesta A, "Placa de bodega")
+   Papel de etiqueta sobre respaldo siliconado. Un solo verde de interfaz.
+   Los colores reglamentarios (hz-*) solo se usan dentro de las etiquetas.
+   ========================================================= */
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+:root {
+  --paper: #fbfcfa;
+  --liner: #e4e9e5;
+  --liner-2: #d3dbd5;
+  --ink: #121715;
+  --ink-2: #4a5450;
+  --rule: #c9d1cc;
+  /* Verde de marca: provisional hasta recibir el logo. */
+  --brand: #08703f;
+  --brand-ink: #ffffff;
+  --brand-deep: #064d2c;
+  --brand-tint: #ddeee4;
+  /* Superficie de las etiquetas dibujadas: siempre papel blanco, también en modo oscuro. */
+  --label: #ffffff;
+  --label-ink: #141414;
+  --shadow-tint: 6 77 44;
+  color-scheme: light dark;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --paper: #151b18;
+    --liner: #0e1311;
+    --liner-2: #1d2521;
+    --ink: #eef2ef;
+    --ink-2: #a9b5af;
+    --rule: #2c3631;
+    --brand: #2fb673;
+    --brand-ink: #06140d;
+    --brand-deep: #8fe0b5;
+    --brand-tint: #163324;
+    --label: #f4f6f4;
+    --shadow-tint: 0 0 0;
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+@theme inline {
+  --color-paper: var(--paper);
+  --color-liner: var(--liner);
+  --color-liner-2: var(--liner-2);
+  --color-ink: var(--ink);
+  --color-ink-2: var(--ink-2);
+  --color-rule: var(--rule);
+  --color-brand: var(--brand);
+  --color-brand-ink: var(--brand-ink);
+  --color-brand-deep: var(--brand-deep);
+  --color-brand-tint: var(--brand-tint);
+  --color-label: var(--label);
+  --color-label-ink: var(--label-ink);
+
+  --color-hz-red: #d52b1e;
+  --color-hz-green: #00843d;
+  --color-hz-yellow: #ffcd00;
+  --color-hz-orange: #f7941d;
+  --color-hz-black: #1a1a1a;
+
+  --font-display: var(--font-display), "Arial Narrow", sans-serif;
+  --font-sans: var(--font-body), system-ui, sans-serif;
+  --font-mono: var(--font-mono), ui-monospace, monospace;
+
+  --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-spring: cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+@layer base {
+  html {
+    -webkit-text-size-adjust: 100%;
+    scroll-padding-top: 5rem;
+  }
+  body {
+    background: var(--paper);
+    color: var(--ink);
+    font-family: var(--font-sans);
+    font-size: 1.0625rem;
+    line-height: 1.6;
+    text-rendering: optimizeLegibility;
+  }
+  :focus-visible {
+    outline: 3px solid var(--brand);
+    outline-offset: 3px;
+    border-radius: 2px;
+  }
+  h1,
+  h2,
+  h3 {
+    font-family: var(--font-display);
+    text-wrap: balance;
+  }
+  p {
+    text-wrap: pretty;
+  }
+  ::selection {
+    background: var(--brand);
+    color: var(--brand-ink);
+  }
+}
+
+@layer components {
+  .wrap {
+    width: 100%;
+    max-width: 80rem;
+    margin-inline: auto;
+    padding-inline: 1rem;
+  }
+  @media (min-width: 640px) {
+    .wrap {
+      padding-inline: 1.5rem;
+    }
+  }
+
+  .display {
+    font-family: var(--font-display);
+    font-weight: 900;
+    text-transform: uppercase;
+    line-height: 0.92;
+    letter-spacing: -0.005em;
+  }
+  .h2 {
+    font-family: var(--font-display);
+    font-weight: 900;
+    text-transform: uppercase;
+    line-height: 0.95;
+    font-size: clamp(2rem, 4.2vw, 3.25rem);
+  }
+  .kicker {
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--ink-2);
+  }
+  .data {
+    font-family: var(--font-mono);
+    font-size: 0.8125rem;
+    letter-spacing: 0.01em;
+    font-variant-numeric: tabular-nums;
+  }
+
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.6rem;
+    min-height: 3rem;
+    padding: 0.8rem 1.25rem;
+    border-radius: 4px;
+    font-weight: 600;
+    line-height: 1;
+    white-space: nowrap;
+    text-decoration: none;
+    transition:
+      transform 0.15s var(--ease-out-expo),
+      background-color 0.15s,
+      color 0.15s;
+  }
+  .btn:active {
+    transform: translateY(1px) scale(0.99);
+  }
+  .btn-wa {
+    background: var(--brand);
+    color: var(--brand-ink);
+  }
+  .btn-wa:hover {
+    background: var(--brand-deep);
+    color: var(--paper);
+  }
+  .btn-call {
+    border: 1.5px solid var(--ink);
+    color: var(--ink);
+  }
+  .btn-call:hover {
+    background: var(--ink);
+    color: var(--paper);
+  }
+  .btn-sm {
+    min-height: 2.5rem;
+    padding: 0.55rem 0.85rem;
+    font-size: 0.9375rem;
+  }
+
+  .link {
+    color: var(--brand);
+    font-weight: 600;
+    text-decoration: underline;
+    text-decoration-thickness: 1.5px;
+    text-underline-offset: 3px;
+  }
+  .link:hover {
+    color: var(--brand-deep);
+  }
+
+  /* Tablas tipo ficha técnica */
+  .spec {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.975rem;
+  }
+  .spec caption {
+    text-align: left;
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--ink-2);
+    padding-bottom: 0.75rem;
+  }
+  .spec th[scope="col"] {
+    text-align: left;
+    font-family: var(--font-mono);
+    font-weight: 500;
+    font-size: 0.75rem;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--ink-2);
+    padding: 0.5rem 1rem 0.5rem 0;
+    border-bottom: 1.5px solid var(--ink);
+  }
+  .spec td,
+  .spec th[scope="row"] {
+    text-align: left;
+    vertical-align: top;
+    padding: 0.7rem 1rem 0.7rem 0;
+  }
+  .spec tbody tr:nth-child(odd) {
+    background: color-mix(in srgb, var(--liner) 45%, transparent);
+  }
+  .spec td:first-child,
+  .spec th[scope="row"] {
+    padding-left: 0.6rem;
+  }
+  .spec th[scope="col"]:first-child {
+    padding-left: 0.6rem;
+  }
+
+  /* Hoja de papel sobre el respaldo (tarjetas que contienen etiquetas) */
+  .sheet {
+    background: var(--label);
+    color: var(--label-ink);
+    border-radius: 8px;
+    box-shadow:
+      0 1px 0 rgb(var(--shadow-tint) / 0.08),
+      0 12px 28px -14px rgb(var(--shadow-tint) / 0.35);
+  }
+
+  /* Efecto despegar: la esquina inferior derecha se levanta al pasar el cursor. */
+  .peel {
+    position: relative;
+    isolation: isolate;
+    overflow: hidden;
+  }
+  .peel::before,
+  .peel::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 3rem;
+    height: 3rem;
+    transform-origin: 100% 100%;
+    transform: scale(0.001);
+    pointer-events: none;
+  }
+  .peel::after {
+    background: linear-gradient(135deg, transparent 50%, var(--liner-2) 50%);
+  }
+  .peel::before {
+    z-index: 1;
+    background: linear-gradient(315deg, transparent 50%, #e8ebe8 50%);
+    box-shadow: -3px -3px 7px rgb(0 0 0 / 0.14);
+  }
+  @media (hover: hover) and (prefers-reduced-motion: no-preference) {
+    .peel::before,
+    .peel::after {
+      transition: transform 0.4s var(--ease-spring);
+    }
+    .peel:hover::before,
+    .peel:hover::after,
+    .peel:focus-visible::before,
+    .peel:focus-visible::after {
+      transform: scale(1);
+    }
+  }
+
+  /* Entrada del titular por líneas y rombos que se pegan: solo CSS, el texto existe sin JS. */
+  .line-mask {
+    display: block;
+    overflow: hidden;
+    /* espacio para tildes de mayúsculas (É, Í) y descendentes */
+    padding-block: 0.14em 0.06em;
+    margin-block: -0.14em -0.06em;
+  }
+  .line-mask > span {
+    display: inline-block;
+  }
+  @media (prefers-reduced-motion: no-preference) {
+    .line-mask > span {
+      animation: line-up 0.8s var(--ease-out-expo) both;
+      animation-delay: calc(var(--l, 0) * 110ms + 60ms);
+    }
+    .stick {
+      animation: stick 0.95s var(--ease-spring) both;
+      animation-delay: calc(var(--i, 0) * 85ms + 220ms);
+    }
+  }
+}
+
+@keyframes line-up {
+  from {
+    transform: translateY(105%);
+  }
+  to {
+    transform: none;
+  }
+}
+@keyframes stick {
+  0% {
+    opacity: 0;
+    transform: translate(var(--fx, 0), -2.25rem) rotate(var(--rot, -8deg)) scale(1.14);
+  }
+  55% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+/* Transiciones entre páginas: fundido corto. También en cargas completas (cambio de idioma). */
+@view-transition {
+  navigation: auto;
+}
+::view-transition-old(*),
+::view-transition-new(*) {
+  animation-duration: 220ms;
+  animation-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  ::view-transition-group(*),
+  ::view-transition-old(*),
+  ::view-transition-new(*) {
+    animation: none !important;
+  }
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+  }
 }

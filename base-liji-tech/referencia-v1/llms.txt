@@ -1,0 +1,37 @@
+# Liji Tech
+
+> Liji Tech sells hazmat, shipping, handling and thermal labels, ribbons and custom flexographic labels made at the Eti-Label plant in Miami, Florida. Orders and quotes by WhatsApp or phone, in English or Spanish.
+
+## Facts
+- Labels are made by Eti-Label Inc. at 6977 NW 82nd Ave, Miami, FL 33166. Liji Tech is the direct sales line of that plant.
+- Phone: (305) 716-0094
+- Printing method: flexography. Stock labels and custom labels.
+- Languages: English and Spanish.
+
+## Products and catalog sizes
+- Hazard class labels (4 x 4 in) and placards (10.75 x 10.75 in): Class 2 Flammable gas; Class 2 Non-flammable gas; Class 2 Toxic gas; Class 3 Flammable liquid; Class 4 Flammable solid; Class 4 Spontaneously combustible; Class 5.1 Oxidizer; Class 5.2 Organic peroxide; Class 6 Toxic, inhalation hazard; Class 8 Corrosive; Class 9 Miscellaneous.
+- Lithium battery marks UN3480, UN3481, UN3090, UN3091 (4.5 x 5 in) and Class 9 lithium battery label (4 x 4 in).
+- Air cargo labels: Cargo Aircraft Only (4.5 x 4.75 in); Magnetized Material (4.5 x 3.5 in); Limited Quantity, ground and air (Y) (2 x 2 or 4 x 4 in); Dry Ice UN1845, Class 9 (4 x 5 in); Time & Temperature Sensitive (4 x 4 in); Perishable (3 x 4 or 3 x 5 in); Live Animals (4 x 6 in); Rush AOG (4 x 4 in); Overpack (2 x 6 in); Consumer Commodity (4 x 5 in); Marine Pollutant (4 x 4 in).
+- Handling labels (3 x 4, 3 x 5, 4 x 4, 4 x 6, 2 x 6 in): Fragile, Fragile Glass, Fragile Liquid, This Side Up, red or black arrows, Please Handle with Care, Contains Liquid, Keep Dry, Do Not Stack, Do Not Double Stack, Do Not Freeze or Refrigerate, Do Not Use Blades to Open, Delicate Instruments, Mixed Carton, Partial Carton, Mixed Merchandise.
+- Blank thermal labels in 34 colors, as rolls and as circles from 1 to 5 in: 18 colors for direct thermal or thermal transfer, 16 for thermal transfer.
+- Thermal transfer ribbons: Zebra 110 mm x 74 m, Datamax 110 mm x 360 m, Zebra 110 mm x 450 m.
+- Custom flexographic labels: product labels, branded shipping labels, color-coded warehouse labels.
+
+## Quick reference
+- UN3480: Lithium ion batteries shipped on their own.
+- UN3481: Lithium ion batteries contained in or packed with equipment.
+- UN3090: Lithium metal batteries shipped on their own.
+- UN3091: Lithium metal batteries contained in or packed with equipment.
+- UN1845: Dry ice (carbon dioxide, solid), Class 9.
+- UN1266: Perfumery products with flammable solvents, Class 3.
+- UN2794: Wet batteries filled with acid, Class 8.
+- Cargo Aircraft Only: Package allowed on cargo aircraft, not on passenger aircraft.
+- Limited Quantity / Y: Small inner packages shipped under limited quantity rules. The Y mark is the air version.
+- Overpack: Several packages inside one outer pack that hides their labels.
+- Rush AOG: Aircraft on Ground: a part needed to return an aircraft to service.
+
+Reference only. The shipper classifies the goods and chooses marks under the current IATA DGR, IMDG Code and 49 CFR.
+
+## Pages
+- [English](https://www.lijitech.example/)
+- [Español](https://www.lijitech.example/es)

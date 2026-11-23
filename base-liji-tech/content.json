@@ -1,0 +1,968 @@
+{
+  "_nota": "Contenido base del sitio Liji Tech (v1, 22 nov 2026). Textos en inglés y español ya redactados. Los valores de 'config' son provisionales.",
+  "config": {
+    "siteUrl": "POR_CONFIRMAR",
+    "whatsapp": "POR_CONFIRMAR",
+    "phoneE164": "+13057160094",
+    "phoneDisplay": "(305) 716-0094",
+    "street": "6977 NW 82nd Ave",
+    "city": "Miami",
+    "region": "FL",
+    "zip": "33166",
+    "pendiente": [
+      "dominio",
+      "WhatsApp de Lilia",
+      "confirmar teléfono y dirección",
+      "logo y verde de marca",
+      "fotos reales"
+    ]
+  },
+  "strings": {
+    "en": {
+      "lang": "en",
+      "locale": "en_US",
+      "path": "/",
+      "other_lang": "ES",
+      "other_label": "Ver en español",
+      "title": "Hazmat, Shipping & Thermal Labels in Miami | Liji Tech",
+      "desc": "Hazmat labels and placards, lithium battery marks, air cargo and handling labels, thermal rolls and custom flexo labels, printed in Miami. Price by WhatsApp.",
+      "skip": "Skip to content",
+      "nav": [
+        [
+          "labels",
+          "Labels"
+        ],
+        [
+          "order",
+          "Order"
+        ],
+        [
+          "shippers",
+          "By shipper"
+        ],
+        [
+          "guide",
+          "Guide"
+        ],
+        [
+          "faq",
+          "FAQ"
+        ]
+      ],
+      "wa_short": "WhatsApp",
+      "wa_default": "Hi Liji Tech, I need a price for labels.",
+      "eyebrow": "Printed in Miami, FL 33166 · English / Español",
+      "h1": "Hazmat, shipping and thermal labels, <em>printed in Miami</em>",
+      "lede": "Liji Tech sells labels straight from the Eti-Label plant near Miami International Airport: hazard class labels and placards, lithium battery marks, air cargo and handling labels, blank thermal rolls, ribbons and custom flexographic printing.",
+      "cta_wa": "Get a price on WhatsApp",
+      "cta_call": "Call",
+      "lat_alt": "Hazard class labels: flammable gas, non-flammable gas, oxidizer, toxic, flammable solid, flammable liquid, organic peroxide, corrosive and class 9.",
+      "facts": [
+        [
+          "Print",
+          "Flexographic, in house"
+        ],
+        [
+          "Stock",
+          "Hazmat, air cargo, handling"
+        ],
+        [
+          "Thermal",
+          "34 colors, rolls and circles"
+        ],
+        [
+          "Custom",
+          "Your size, color and text"
+        ]
+      ],
+      "cat_h": "Labels you can order",
+      "cat_p": "These are the sizes in the current catalog. If you need another size or wording, ask for it as a custom job.",
+      "ask": "Ask for a price",
+      "ask_msg": "Hi Liji Tech, I need a price for: ",
+      "g_haz": [
+        "Hazard class labels and placards",
+        "Labels 4 × 4 in · Placards 10.75 × 10.75 in",
+        "Placards also come blank or with a UN number panel.",
+        "Class"
+      ],
+      "g_li": [
+        "Lithium battery marks",
+        "Marks 4.5 × 5 in · Class 9 label 4 × 4 in",
+        "The four lithium battery marks, plus the Class 9 lithium battery hazard label."
+      ],
+      "g_air": [
+        "Air cargo labels",
+        "From 2 × 2 to 4 × 6 in"
+      ],
+      "g_hand": [
+        "Handling labels",
+        "3 × 4 · 3 × 5 · 4 × 4 · 4 × 6 · 2 × 6 in"
+      ],
+      "g_th": [
+        "Blank thermal labels in color",
+        "Rolls and circles from 1 to 5 in",
+        "Color rolls help a warehouse separate freight by destination, day or client. Screen colors are approximate.",
+        "Direct thermal or thermal transfer · 18 colors",
+        "Thermal transfer · 16 colors"
+      ],
+      "g_rib": [
+        "Thermal transfer ribbons",
+        "Zebra · Datamax",
+        "Bar length shows meters per roll."
+      ],
+      "order_h": "Send your order in one message",
+      "order_p": "Fill in what you know. The message opens in WhatsApp ready to send.",
+      "steps": [
+        "Pick the label and the size",
+        "Add the quantity and any custom text",
+        "Send it on WhatsApp. We reply with price and lead time"
+      ],
+      "f_type": "Label type",
+      "f_size": "Size",
+      "f_size_ph": "4 × 4 in",
+      "f_qty": "Quantity (rolls)",
+      "f_qty_ph": "10",
+      "f_custom": "I need custom printing",
+      "f_notes": "Notes",
+      "f_notes_ph": "Text, color, printer model, delivery ZIP",
+      "f_msg": "Your message",
+      "f_send": "Send on WhatsApp",
+      "m_hi": "Hi Liji Tech, I need a price.",
+      "m_type": "Label",
+      "m_size": "Size",
+      "m_qty": "Quantity",
+      "m_custom": "Custom printing: yes",
+      "m_notes": "Notes",
+      "types": [
+        "Hazard class labels",
+        "Hazmat placards",
+        "Lithium battery marks",
+        "Air cargo labels",
+        "Handling labels",
+        "Blank thermal labels",
+        "Thermal transfer ribbons",
+        "Custom printed labels",
+        "Other"
+      ],
+      "who_h": "Labels by what you ship",
+      "who_p": "A starting list. Send us your packing list or a photo of the labels you use now and we match them.",
+      "who": [
+        [
+          "Freight forwarders and consolidators",
+          "Hazard class labels, lithium battery marks, Overpack, Limited Quantity, color thermal rolls"
+        ],
+        [
+          "Customs brokers, 3PLs and warehouses",
+          "Handling labels, color thermal rolls, ribbons, Mixed Carton and Partial Carton"
+        ],
+        [
+          "Electronics exporters",
+          "UN3480, UN3481, UN3090 and UN3091 marks, Class 9 label, Cargo Aircraft Only"
+        ],
+        [
+          "Perfume and cosmetics exporters",
+          "Class 3 Flammable Liquid, UN1266 perfumery products, Limited Quantity"
+        ],
+        [
+          "Flowers, seafood and other perishables",
+          "Perishable, Time & Temperature Sensitive, Dry Ice UN1845, This Side Up"
+        ],
+        [
+          "Aircraft parts suppliers",
+          "Rush AOG, Fragile, Delicate Instruments"
+        ],
+        [
+          "Food, beverage and consumer brands",
+          "Custom flexographic product labels"
+        ]
+      ],
+      "guide_h": "Quick reference: which mark is which",
+      "guide_p": "The marks people ask about most, in plain words.",
+      "th": [
+        "Mark",
+        "What it identifies",
+        "Size in catalog"
+      ],
+      "note": "Reference only. The shipper classifies the goods and chooses the marks under the current IATA Dangerous Goods Regulations, the IMDG Code and 49 CFR.",
+      "dt_h": "Direct thermal",
+      "dt_p": "The printer heats the label itself, so there is no ribbon. It suits labels with a short life, such as shipping labels. Heat and sunlight fade the print.",
+      "tt_h": "Thermal transfer",
+      "tt_p": "The printer melts ink from a ribbon onto the label. The print lasts longer and resists rubbing, which suits inventory and product labels.",
+      "cu_h": "Custom labels with your name on them",
+      "cu_p": "Product labels, shipping labels with your brand and color-coded labels for your warehouse. Flexographic printing uses a plate made for your design, so every roll and every reorder matches.",
+      "need_h": "To quote, send us",
+      "need": [
+        "Label size",
+        "Quantity",
+        "Where it sticks: box, bottle, freezer, outdoors",
+        "Your artwork, or a photo of the label you use now"
+      ],
+      "cu_msg": "Hi Liji Tech, I need a quote for custom printed labels.",
+      "faq_h": "Questions before you order",
+      "faq": [
+        [
+          "Where are the labels made?",
+          "At the Eti-Label plant, {addr}. Liji Tech is the direct sales line of that plant."
+        ],
+        [
+          "Which labels can I order?",
+          "Hazard class labels and placards, lithium battery marks, air cargo labels, handling labels, blank thermal labels in 34 colors, thermal transfer ribbons for Zebra and Datamax printers, and custom flexographic labels."
+        ],
+        [
+          "Do you print custom labels?",
+          "Yes. Send the size, the quantity and your artwork, or a photo of the label you use now, and we quote it."
+        ],
+        [
+          "Which lithium battery mark do I need?",
+          "UN3480 is for lithium ion batteries shipped on their own and UN3481 for lithium ion batteries in or with equipment. UN3090 and UN3091 cover the same two cases for lithium metal batteries. Your dangerous goods classification decides which one applies."
+        ],
+        [
+          "What is the difference between direct thermal and thermal transfer labels?",
+          "Direct thermal labels print with heat alone and suit short-life uses such as shipping labels. Thermal transfer labels print with a ribbon, last longer and resist rubbing."
+        ],
+        [
+          "Which ribbons do you carry?",
+          "Zebra 110 mm × 74 m, Zebra 110 mm × 450 m and Datamax 110 mm × 360 m."
+        ],
+        [
+          "How do I get a price?",
+          "Send a WhatsApp message or call {tel} with the label, the size and the quantity. We answer in English or Spanish."
+        ]
+      ],
+      "ct_h": "Tell us what you ship. We send the price.",
+      "ct_p": "WhatsApp is the fastest way. Photos of your current labels help.",
+      "nap_made": "Labels made by Eti-Label Inc.",
+      "foot": "Liji Tech. Hazmat, shipping and thermal labels, Miami, Florida.",
+      "org_desc": "Liji Tech sells hazmat, shipping, handling and thermal labels, ribbons and custom flexographic labels made at the Eti-Label plant in Miami, Florida."
+    },
+    "es": {
+      "lang": "es",
+      "locale": "es_US",
+      "path": "/es",
+      "other_lang": "EN",
+      "other_label": "View in English",
+      "title": "Etiquetas de envío, hazmat y térmicas en Miami | Liji Tech",
+      "desc": "Etiquetas de mercancía peligrosa, baterías de litio, carga aérea y manejo, rollos térmicos y etiquetas a medida, impresas en Miami. Precio por WhatsApp.",
+      "skip": "Ir al contenido",
+      "nav": [
+        [
+          "labels",
+          "Etiquetas"
+        ],
+        [
+          "order",
+          "Pedir"
+        ],
+        [
+          "shippers",
+          "Según su carga"
+        ],
+        [
+          "guide",
+          "Guía"
+        ],
+        [
+          "faq",
+          "Preguntas"
+        ]
+      ],
+      "wa_short": "WhatsApp",
+      "wa_default": "Hola Liji Tech, necesito precio de etiquetas.",
+      "eyebrow": "Impresas en Miami, FL 33166 · Español / English",
+      "h1": "Etiquetas de envío, mercancía peligrosa y térmicas, <em>impresas en Miami</em>",
+      "lede": "Liji Tech vende etiquetas directo desde la planta de Eti-Label, cerca del Aeropuerto Internacional de Miami: etiquetas y placards de clases de riesgo, marcas de baterías de litio, etiquetas de carga aérea y de manejo, rollos térmicos en blanco, ribbons e impresión flexográfica a medida.",
+      "cta_wa": "Pedir precio por WhatsApp",
+      "cta_call": "Llamar",
+      "lat_alt": "Etiquetas de clases de riesgo: gas inflamable, gas no inflamable, comburente, tóxico, sólido inflamable, líquido inflamable, peróxido orgánico, corrosivo y clase 9.",
+      "facts": [
+        [
+          "Impresión",
+          "Flexografía, en planta propia"
+        ],
+        [
+          "Stock",
+          "Hazmat, carga aérea, manejo"
+        ],
+        [
+          "Térmicas",
+          "34 colores, rollos y círculos"
+        ],
+        [
+          "A medida",
+          "Su tamaño, color y texto"
+        ]
+      ],
+      "cat_h": "Etiquetas que puede pedir",
+      "cat_p": "Estos son los tamaños del catálogo actual. Si necesita otro tamaño u otro texto, pídalo como trabajo a medida.",
+      "ask": "Pedir precio",
+      "ask_msg": "Hola Liji Tech, necesito precio de: ",
+      "g_haz": [
+        "Etiquetas y placards de clases de riesgo",
+        "Etiquetas 4 × 4 in · Placards 10.75 × 10.75 in",
+        "Los placards también vienen en blanco o con panel para el número UN.",
+        "Clase"
+      ],
+      "g_li": [
+        "Marcas de baterías de litio",
+        "Marcas 4.5 × 5 in · Etiqueta Clase 9 de 4 × 4 in",
+        "Las cuatro marcas de baterías de litio, más la etiqueta de riesgo Clase 9 para baterías de litio."
+      ],
+      "g_air": [
+        "Etiquetas de carga aérea",
+        "De 2 × 2 a 4 × 6 in"
+      ],
+      "g_hand": [
+        "Etiquetas de manejo",
+        "3 × 4 · 3 × 5 · 4 × 4 · 4 × 6 · 2 × 6 in"
+      ],
+      "g_th": [
+        "Etiquetas térmicas en blanco, de color",
+        "Rollos y círculos de 1 a 5 in",
+        "Los rollos de color ayudan a una bodega a separar la carga por destino, día o cliente. Los colores en pantalla son aproximados.",
+        "Térmica directa o transferencia térmica · 18 colores",
+        "Transferencia térmica · 16 colores"
+      ],
+      "g_rib": [
+        "Ribbons de transferencia térmica",
+        "Zebra · Datamax",
+        "El largo de la barra muestra los metros por rollo."
+      ],
+      "order_h": "Arme su pedido en un mensaje",
+      "order_p": "Llene lo que sepa. El mensaje se abre en WhatsApp listo para enviar.",
+      "steps": [
+        "Elija la etiqueta y el tamaño",
+        "Agregue la cantidad y el texto especial, si lo necesita",
+        "Envíelo por WhatsApp. Respondemos con precio y tiempo de entrega"
+      ],
+      "f_type": "Tipo de etiqueta",
+      "f_size": "Tamaño",
+      "f_size_ph": "4 × 4 in",
+      "f_qty": "Cantidad (rollos)",
+      "f_qty_ph": "10",
+      "f_custom": "Necesito impresión a medida",
+      "f_notes": "Notas",
+      "f_notes_ph": "Texto, color, modelo de impresora, ZIP de entrega",
+      "f_msg": "Su mensaje",
+      "f_send": "Enviar por WhatsApp",
+      "m_hi": "Hola Liji Tech, necesito un precio.",
+      "m_type": "Etiqueta",
+      "m_size": "Tamaño",
+      "m_qty": "Cantidad",
+      "m_custom": "Impresión a medida: sí",
+      "m_notes": "Notas",
+      "types": [
+        "Etiquetas de clases de riesgo",
+        "Placards hazmat",
+        "Marcas de baterías de litio",
+        "Etiquetas de carga aérea",
+        "Etiquetas de manejo",
+        "Etiquetas térmicas en blanco",
+        "Ribbons de transferencia térmica",
+        "Etiquetas impresas a medida",
+        "Otra"
+      ],
+      "who_h": "Etiquetas según lo que usted envía",
+      "who_p": "Una lista para empezar. Envíenos su lista de empaque o una foto de las etiquetas que usa hoy y las igualamos.",
+      "who": [
+        [
+          "Agentes de carga y consolidadores",
+          "Etiquetas de clases de riesgo, marcas de baterías de litio, Overpack, cantidad limitada, rollos térmicos de color"
+        ],
+        [
+          "Agentes de aduana, 3PL y bodegas",
+          "Etiquetas de manejo, rollos térmicos de color, ribbons, caja mixta y caja parcial"
+        ],
+        [
+          "Exportadores de electrónica",
+          "Marcas UN3480, UN3481, UN3090 y UN3091, etiqueta Clase 9, Cargo Aircraft Only"
+        ],
+        [
+          "Exportadores de perfumería y cosmética",
+          "Líquido inflamable Clase 3, productos de perfumería UN1266, cantidad limitada"
+        ],
+        [
+          "Flores, pescado y otros perecederos",
+          "Perecedero, sensible a tiempo y temperatura, hielo seco UN1845, este lado arriba"
+        ],
+        [
+          "Proveedores de repuestos de aviación",
+          "Rush AOG, frágil, instrumentos delicados"
+        ],
+        [
+          "Marcas de alimentos, bebidas y consumo",
+          "Etiquetas de producto a medida en flexografía"
+        ]
+      ],
+      "guide_h": "Guía rápida: qué marca es cuál",
+      "guide_p": "Las marcas por las que más preguntan, en palabras sencillas.",
+      "th": [
+        "Marca",
+        "Qué identifica",
+        "Tamaño en catálogo"
+      ],
+      "note": "Solo como referencia. El expedidor clasifica la mercancía y elige las marcas según la edición vigente de la Reglamentación sobre Mercancías Peligrosas de IATA, el Código IMDG y el 49 CFR.",
+      "dt_h": "Térmica directa",
+      "dt_p": "La impresora calienta la etiqueta misma, así que no usa ribbon. Sirve para etiquetas de vida corta, como las de envío. El calor y el sol borran la impresión.",
+      "tt_h": "Transferencia térmica",
+      "tt_p": "La impresora funde la tinta de un ribbon sobre la etiqueta. La impresión dura más y resiste el roce, por eso sirve para inventario y producto.",
+      "cu_h": "Etiquetas a medida con su marca",
+      "cu_p": "Etiquetas de producto, etiquetas de envío con su marca y etiquetas de color para su bodega. La flexografía usa una plancha hecha para su diseño, así cada rollo y cada repetición salen iguales.",
+      "need_h": "Para cotizar, envíenos",
+      "need": [
+        "Tamaño de la etiqueta",
+        "Cantidad",
+        "Dónde se pega: caja, botella, congelador, exterior",
+        "Su arte, o una foto de la etiqueta que usa hoy"
+      ],
+      "cu_msg": "Hola Liji Tech, necesito cotizar etiquetas impresas a medida.",
+      "faq_h": "Preguntas antes de pedir",
+      "faq": [
+        [
+          "¿Dónde se fabrican las etiquetas?",
+          "En la planta de Eti-Label, {addr}. Liji Tech es la línea de venta directa de esa planta."
+        ],
+        [
+          "¿Qué etiquetas puedo pedir?",
+          "Etiquetas y placards de clases de riesgo, marcas de baterías de litio, etiquetas de carga aérea, etiquetas de manejo, etiquetas térmicas en blanco en 34 colores, ribbons de transferencia térmica para impresoras Zebra y Datamax, y etiquetas a medida en flexografía."
+        ],
+        [
+          "¿Imprimen etiquetas a medida?",
+          "Sí. Envíe el tamaño, la cantidad y su arte, o una foto de la etiqueta que usa hoy, y se la cotizamos."
+        ],
+        [
+          "¿Qué marca de baterías de litio necesito?",
+          "UN3480 es para baterías de ion de litio enviadas solas y UN3481 para baterías de ion de litio dentro de un equipo o con él. UN3090 y UN3091 cubren los mismos dos casos para baterías de metal litio. La clasificación de su mercancía peligrosa define cuál aplica."
+        ],
+        [
+          "¿Qué diferencia hay entre térmica directa y transferencia térmica?",
+          "La térmica directa imprime solo con calor y sirve para usos de vida corta, como etiquetas de envío. La transferencia térmica imprime con ribbon, dura más y resiste el roce."
+        ],
+        [
+          "¿Qué ribbons manejan?",
+          "Zebra 110 mm × 74 m, Zebra 110 mm × 450 m y Datamax 110 mm × 360 m."
+        ],
+        [
+          "¿Cómo pido un precio?",
+          "Envíe un mensaje de WhatsApp o llame al {tel} con la etiqueta, el tamaño y la cantidad. Atendemos en español o inglés."
+        ]
+      ],
+      "ct_h": "Díganos qué envía. Le mandamos el precio.",
+      "ct_p": "WhatsApp es la vía más rápida. Las fotos de sus etiquetas actuales ayudan.",
+      "nap_made": "Etiquetas fabricadas por Eti-Label Inc.",
+      "foot": "Liji Tech. Etiquetas de envío, mercancía peligrosa y térmicas en Miami, Florida.",
+      "org_desc": "Liji Tech vende etiquetas de mercancía peligrosa, envío, manejo y térmicas, ribbons y etiquetas a medida en flexografía, fabricadas en la planta de Eti-Label en Miami, Florida."
+    }
+  },
+  "heroDiamonds": [
+    {
+      "style": "dm-red",
+      "text": "Flammable gas",
+      "number": "2"
+    },
+    {
+      "style": "dm-green",
+      "text": "Non-flammable gas",
+      "number": "2"
+    },
+    {
+      "style": "dm-yellow",
+      "text": "Oxidizer",
+      "number": "5.1"
+    },
+    {
+      "style": "white",
+      "text": "Toxic",
+      "number": "6"
+    },
+    {
+      "style": "dm-stripe",
+      "text": "Flammable solid",
+      "number": "4"
+    },
+    {
+      "style": "dm-red",
+      "text": "Flammable liquid",
+      "number": "3"
+    },
+    {
+      "style": "dm-ry",
+      "text": "Organic peroxide",
+      "number": "5.2"
+    },
+    {
+      "style": "dm-wb",
+      "text": "Corrosive",
+      "number": "8"
+    },
+    {
+      "style": "dm-nine",
+      "text": "",
+      "number": "9"
+    }
+  ],
+  "hazardClasses": [
+    {
+      "style": "dm-red",
+      "number": "2",
+      "en": "Flammable gas",
+      "es": "Gas inflamable"
+    },
+    {
+      "style": "dm-green",
+      "number": "2",
+      "en": "Non-flammable gas",
+      "es": "Gas no inflamable"
+    },
+    {
+      "style": "white",
+      "number": "2",
+      "en": "Toxic gas",
+      "es": "Gas tóxico"
+    },
+    {
+      "style": "dm-red",
+      "number": "3",
+      "en": "Flammable liquid",
+      "es": "Líquido inflamable"
+    },
+    {
+      "style": "dm-stripe",
+      "number": "4",
+      "en": "Flammable solid",
+      "es": "Sólido inflamable"
+    },
+    {
+      "style": "dm-wr",
+      "number": "4",
+      "en": "Spontaneously combustible",
+      "es": "Combustión espontánea"
+    },
+    {
+      "style": "dm-yellow",
+      "number": "5.1",
+      "en": "Oxidizer",
+      "es": "Comburente"
+    },
+    {
+      "style": "dm-ry",
+      "number": "5.2",
+      "en": "Organic peroxide",
+      "es": "Peróxido orgánico"
+    },
+    {
+      "style": "white",
+      "number": "6",
+      "en": "Toxic, inhalation hazard",
+      "es": "Tóxico, riesgo por inhalación"
+    },
+    {
+      "style": "dm-wb",
+      "number": "8",
+      "en": "Corrosive",
+      "es": "Corrosivo"
+    },
+    {
+      "style": "dm-nine",
+      "number": "9",
+      "en": "Miscellaneous",
+      "es": "Misceláneos"
+    }
+  ],
+  "airCargoLabels": [
+    {
+      "en": "Cargo Aircraft Only",
+      "es": "Solo avión de carga (Cargo Aircraft Only)",
+      "size": "4.5 × 4.75 in"
+    },
+    {
+      "en": "Magnetized Material",
+      "es": "Material magnetizado",
+      "size": "4.5 × 3.5 in"
+    },
+    {
+      "en": "Limited Quantity, ground and air (Y)",
+      "es": "Cantidad limitada, terrestre y aérea (Y)",
+      "size": "2 × 2 · 4 × 4 in"
+    },
+    {
+      "en": "Dry Ice UN1845, Class 9",
+      "es": "Hielo seco UN1845, Clase 9",
+      "size": "4 × 5 in"
+    },
+    {
+      "en": "Time & Temperature Sensitive",
+      "es": "Sensible a tiempo y temperatura",
+      "size": "4 × 4 in"
+    },
+    {
+      "en": "Perishable",
+      "es": "Perecedero",
+      "size": "3 × 4 · 3 × 5 in"
+    },
+    {
+      "en": "Live Animals",
+      "es": "Animales vivos",
+      "size": "4 × 6 in"
+    },
+    {
+      "en": "Rush AOG",
+      "es": "Rush AOG",
+      "size": "4 × 4 in"
+    },
+    {
+      "en": "Overpack",
+      "es": "Overpack (sobreembalaje)",
+      "size": "2 × 6 in"
+    },
+    {
+      "en": "Consumer Commodity",
+      "es": "Consumer Commodity",
+      "size": "4 × 5 in"
+    },
+    {
+      "en": "Marine Pollutant",
+      "es": "Contaminante marino",
+      "size": "4 × 4 in"
+    }
+  ],
+  "handlingLabels": [
+    {
+      "en": "Fragile",
+      "es": "Frágil"
+    },
+    {
+      "en": "Fragile Glass",
+      "es": "Vidrio frágil"
+    },
+    {
+      "en": "Fragile Liquid",
+      "es": "Líquido frágil"
+    },
+    {
+      "en": "This Side Up, red or black arrows",
+      "es": "Este lado arriba, flechas rojas o negras"
+    },
+    {
+      "en": "Please Handle with Care",
+      "es": "Manéjese con cuidado"
+    },
+    {
+      "en": "Contains Liquid",
+      "es": "Contiene líquido"
+    },
+    {
+      "en": "Keep Dry",
+      "es": "Mantener seco"
+    },
+    {
+      "en": "Do Not Stack",
+      "es": "No apilar"
+    },
+    {
+      "en": "Do Not Double Stack",
+      "es": "No apilar doble"
+    },
+    {
+      "en": "Do Not Freeze or Refrigerate",
+      "es": "No congelar ni refrigerar"
+    },
+    {
+      "en": "Do Not Use Blades to Open",
+      "es": "No abrir con cuchilla"
+    },
+    {
+      "en": "Delicate Instruments",
+      "es": "Instrumentos delicados"
+    },
+    {
+      "en": "Mixed Carton",
+      "es": "Caja mixta"
+    },
+    {
+      "en": "Partial Carton",
+      "es": "Caja parcial"
+    },
+    {
+      "en": "Mixed Merchandise",
+      "es": "Mercancía mixta"
+    }
+  ],
+  "thermalColors": {
+    "directThermalOrThermalTransfer": [
+      {
+        "code": "BL-01",
+        "ref": "P. 290",
+        "hexAprox": "#B9D9EB"
+      },
+      {
+        "code": "BL-03",
+        "ref": "P. 299",
+        "hexAprox": "#00A3E0"
+      },
+      {
+        "code": "BL-04",
+        "ref": "P. 306",
+        "hexAprox": "#00B5E2"
+      },
+      {
+        "code": "BL-05",
+        "ref": "P. 319",
+        "hexAprox": "#7DD3DA"
+      },
+      {
+        "code": "BL-06",
+        "ref": "P. 312",
+        "hexAprox": "#00A9CE"
+      },
+      {
+        "code": "GR-04",
+        "ref": "P. 365",
+        "hexAprox": "#C2E189"
+      },
+      {
+        "code": "GR-05",
+        "ref": "P. 375",
+        "hexAprox": "#97D700"
+      },
+      {
+        "code": "YL-07",
+        "ref": "P. 100",
+        "hexAprox": "#F6EB61"
+      },
+      {
+        "code": "YL-08",
+        "ref": "Yellow",
+        "hexAprox": "#FEDD00"
+      },
+      {
+        "code": "OR-10",
+        "ref": "P. 1555",
+        "hexAprox": "#FFB990"
+      },
+      {
+        "code": "OR-12",
+        "ref": "P. 021",
+        "hexAprox": "#FE5000"
+      },
+      {
+        "code": "OR-13",
+        "ref": "P. 137",
+        "hexAprox": "#FFA300"
+      },
+      {
+        "code": "OR-14",
+        "ref": "P. 123",
+        "hexAprox": "#FFC72C"
+      },
+      {
+        "code": "LV-14",
+        "ref": "P. 530",
+        "hexAprox": "#D7C6E6"
+      },
+      {
+        "code": "RD-16",
+        "ref": "P. 485",
+        "hexAprox": "#DA291C"
+      },
+      {
+        "code": "LP-17",
+        "ref": "P. 196",
+        "hexAprox": "#ECC7CD"
+      },
+      {
+        "code": "TM-20",
+        "ref": "P. 466",
+        "hexAprox": "#C6AA76"
+      },
+      {
+        "code": "Gray-21",
+        "ref": "Cool Gray",
+        "hexAprox": "#D0D0CE"
+      }
+    ],
+    "thermalTransferOnly": [
+      {
+        "code": "BL-02",
+        "ref": "Reflex",
+        "hexAprox": "#001489"
+      },
+      {
+        "code": "GR-03",
+        "ref": "P. 335",
+        "hexAprox": "#007B5F"
+      },
+      {
+        "code": "GR-05A",
+        "ref": "P. 802",
+        "hexAprox": "#44D62C"
+      },
+      {
+        "code": "GR-06",
+        "ref": "P. 347",
+        "hexAprox": "#009A44"
+      },
+      {
+        "code": "YL-09",
+        "ref": "Chartreuse",
+        "hexAprox": "#E3E935"
+      },
+      {
+        "code": "OR-11",
+        "ref": "P. 810",
+        "hexAprox": "#FFCC1E"
+      },
+      {
+        "code": "OR-12A",
+        "ref": "P. 804",
+        "hexAprox": "#FFAA4D"
+      },
+      {
+        "code": "PP-13",
+        "ref": "Purple",
+        "hexAprox": "#BB29BB"
+      },
+      {
+        "code": "RD-13",
+        "ref": "Rubine",
+        "hexAprox": "#CE0058"
+      },
+      {
+        "code": "RD-14",
+        "ref": "Rodamine",
+        "hexAprox": "#E10098"
+      },
+      {
+        "code": "RD-15",
+        "ref": "Warm Red",
+        "hexAprox": "#F9423A"
+      },
+      {
+        "code": "RD-16A",
+        "ref": "P. 805",
+        "hexAprox": "#FF7276"
+      },
+      {
+        "code": "PK-18",
+        "ref": "P. 806",
+        "hexAprox": "#FF3EB5"
+      },
+      {
+        "code": "BR-19",
+        "ref": "P. 4635",
+        "hexAprox": "#946037"
+      },
+      {
+        "code": "BR-19A",
+        "ref": "P. 483",
+        "hexAprox": "#653024"
+      },
+      {
+        "code": "GD-22",
+        "ref": "P. 472",
+        "hexAprox": "#E59E6D"
+      }
+    ],
+    "circles_in": [
+      1,
+      1.5,
+      2,
+      2.5,
+      3,
+      4,
+      5
+    ]
+  },
+  "ribbons": [
+    {
+      "printer": "Zebra",
+      "size": "110 mm × 74 m"
+    },
+    {
+      "printer": "Datamax",
+      "size": "110 mm × 360 m"
+    },
+    {
+      "printer": "Zebra",
+      "size": "110 mm × 450 m"
+    }
+  ],
+  "guide": [
+    {
+      "mark": "UN3480",
+      "en": "Lithium ion batteries shipped on their own",
+      "es": "Baterías de ion de litio enviadas solas",
+      "catalogSize": "4.5 × 5 in"
+    },
+    {
+      "mark": "UN3481",
+      "en": "Lithium ion batteries contained in or packed with equipment",
+      "es": "Baterías de ion de litio dentro de un equipo o embaladas con él",
+      "catalogSize": "4.5 × 5 in"
+    },
+    {
+      "mark": "UN3090",
+      "en": "Lithium metal batteries shipped on their own",
+      "es": "Baterías de metal litio enviadas solas",
+      "catalogSize": "4.5 × 5 in"
+    },
+    {
+      "mark": "UN3091",
+      "en": "Lithium metal batteries contained in or packed with equipment",
+      "es": "Baterías de metal litio dentro de un equipo o embaladas con él",
+      "catalogSize": "4.5 × 5 in"
+    },
+    {
+      "mark": "UN1845",
+      "en": "Dry ice (carbon dioxide, solid), Class 9",
+      "es": "Hielo seco (dióxido de carbono sólido), Clase 9",
+      "catalogSize": "4 × 5 in"
+    },
+    {
+      "mark": "UN1266",
+      "en": "Perfumery products with flammable solvents, Class 3",
+      "es": "Productos de perfumería con disolventes inflamables, Clase 3",
+      "catalogSize": "4 × 5 in"
+    },
+    {
+      "mark": "UN2794",
+      "en": "Wet batteries filled with acid, Class 8",
+      "es": "Baterías húmedas con ácido, Clase 8",
+      "catalogSize": "10.75 × 10.75 in"
+    },
+    {
+      "mark": "Cargo Aircraft Only",
+      "en": "Package allowed on cargo aircraft, not on passenger aircraft",
+      "es": "Bulto permitido en avión de carga, no en avión de pasajeros",
+      "catalogSize": "4.5 × 4.75 in"
+    },
+    {
+      "mark": "Limited Quantity / Y",
+      "en": "Small inner packages shipped under limited quantity rules. The Y mark is the air version",
+      "es": "Envases interiores pequeños bajo las reglas de cantidad limitada. La marca Y es la versión aérea",
+      "catalogSize": "2 × 2 · 4 × 4 in"
+    },
+    {
+      "mark": "Overpack",
+      "en": "Several packages inside one outer pack that hides their labels",
+      "es": "Varios bultos dentro de un embalaje exterior que tapa sus etiquetas",
+      "catalogSize": "2 × 6 in"
+    },
+    {
+      "mark": "Rush AOG",
+      "en": "Aircraft on Ground: a part needed to return an aircraft to service",
+      "es": "Aircraft on Ground: pieza necesaria para que un avión vuelva a operar",
+      "catalogSize": "4 × 4 in"
+    }
+  ],
+  "styleKey": {
+    "dm-red": "rojo, texto blanco",
+    "dm-green": "verde, texto blanco",
+    "dm-yellow": "amarillo",
+    "white": "blanco",
+    "dm-stripe": "franjas verticales rojas y blancas",
+    "dm-ry": "mitad superior roja, inferior amarilla",
+    "dm-wr": "mitad superior blanca, inferior roja",
+    "dm-wb": "mitad superior blanca, inferior negra",
+    "dm-nine": "franjas verticales negras arriba, blanco abajo"
+  }
+}
