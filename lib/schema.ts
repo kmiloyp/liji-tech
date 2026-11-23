@@ -36,11 +36,14 @@ export function organization(lang: Lang) {
         : "Liji Tech vende etiquetas de mercancía peligrosa, envío, manejo y térmicas, ribbons y etiquetas a medida en flexografía, fabricadas en la planta de Eti-Label en Miami, Florida.",
     address: postalAddress,
     telephone: site.phoneE164,
+    email: site.orderEmail,
+    foundingDate: site.founded,
     contactPoint: [
       {
         "@type": "ContactPoint",
         contactType: "sales",
         telephone: site.phoneE164,
+        email: site.orderEmail,
         availableLanguage: ["English", "Spanish"],
         areaServed: "US",
       },
@@ -150,6 +153,14 @@ export function etiLabelLocalBusiness(lang: Lang) {
     url: absolute(pathFor(lang, { kind: "factory" })),
     telephone: site.phoneE164,
     address: postalAddress,
+    foundingDate: site.manufacturer.since,
+    openingHoursSpecification: site.hours.map((h) => ({
+      "@type": "OpeningHoursSpecification",
+      dayOfWeek: h.days.map((d) => `https://schema.org/${d}`),
+      opens: h.opens,
+      closes: h.closes,
+    })),
+    paymentAccepted: "Zelle, Check",
     subOrganization: { "@id": ORG_ID },
   };
 }

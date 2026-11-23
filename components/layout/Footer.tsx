@@ -83,6 +83,16 @@ export function Footer({ lang, waMessage }: { lang: Lang; waMessage: string }) {
                 WhatsApp
               </a>
             </p>
+            <p className="mt-1">
+              <a className="link break-all" href={`mailto:${site.orderEmail}`} {...trackAttrs("email", "footer")}>
+                {site.orderEmail}
+              </a>
+            </p>
+            <p className="data mt-3 text-ink-2">
+              {s.plant.hours[0]}: {s.plant.hours[1]}
+              <br />
+              {s.plant.hours[2]}: {s.plant.hours[3]}
+            </p>
           </address>
         </div>
       </div>

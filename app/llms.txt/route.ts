@@ -21,6 +21,11 @@ function build() {
   lines.push(`- Labels are made by ${site.manufacturer.name} at ${addressLine}. ${site.name} is the direct sales line of that plant.`);
   lines.push(`- Phone: ${site.phoneDisplay} (${site.phoneE164})`);
   lines.push(`- WhatsApp: https://wa.me/${site.whatsapp}`);
+  lines.push(`- Purchase orders by email: ${site.orderEmail}`);
+  lines.push(`- ${site.manufacturer.shortName} has printed labels in Miami since ${site.manufacturer.since}. ${site.name} has sold them directly since ${site.founded}.`);
+  lines.push(`- Plant hours (pickup available): ${en.plant.hours[0]} ${en.plant.hours[1]}; ${en.plant.hours[2]} ${en.plant.hours[3]}.`);
+  lines.push(`- Lead time: ${en.plant.leadP}`);
+  lines.push(`- Payment: Zelle or check.`);
   lines.push("- Printing method: flexography. Stock labels and custom labels.");
   lines.push("- Languages: English and Spanish.");
   lines.push("- No public prices: ask by WhatsApp or phone.", "");

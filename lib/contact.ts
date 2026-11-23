@@ -8,9 +8,9 @@ export function waHref(message: string) {
 export const telHref = `tel:${site.phoneE164}`;
 
 /**
- * Atributos de medición para un enlace de WhatsApp o llamada.
+ * Atributos de medición para un enlace de WhatsApp, llamada o correo.
  * El componente <ClickTracker /> los lee y registra el evento.
  */
-export function trackAttrs(channel: "whatsapp" | "call", location: string) {
+export function trackAttrs(channel: "whatsapp" | "call" | "email", location: string) {
   return { "data-track": channel, "data-track-location": location } as const;
 }

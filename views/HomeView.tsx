@@ -7,6 +7,7 @@ import { Diamond } from "@/components/labels/Diamond";
 import { LithiumMark } from "@/components/labels/LithiumMark";
 import { ProductArt } from "@/components/labels/ProductArt";
 import { PageShell } from "@/components/layout/PageShell";
+import { PlantInfo } from "@/components/layout/PlantInfo";
 import { CatalogGrid } from "@/components/motion/CatalogGrid";
 import { LabelFinder } from "@/components/motion/LabelFinder";
 import { RollStrip } from "@/components/motion/RollStrip";
@@ -35,7 +36,7 @@ const HERO = [
 export function HomeView({ lang }: { lang: Lang }) {
   const s = t(lang);
   const h = s.home;
-  const vars = { tel: site.phoneDisplay, addr: addressLine };
+  const vars = { tel: site.phoneDisplay, addr: addressLine, email: site.orderEmail };
   const productPages = Object.fromEntries(
     products.map((p) => [p.id, { id: p.id, name: p[lang].name, href: pathFor(lang, { kind: "product", id: p.id }) }]),
   );
@@ -363,6 +364,9 @@ export function HomeView({ lang }: { lang: Lang }) {
               </Link>
             </p>
           </address>
+        </div>
+        <div className="wrap mt-12 border-t border-rule pt-10">
+          <PlantInfo lang={lang} location="contact" />
         </div>
       </section>
 

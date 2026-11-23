@@ -83,7 +83,7 @@ propuesta-diseno/            propuesta de diseño aprobada (A), textos v2 y cues
 - **No afirmar cumplimiento** de 49 CFR, IATA o IMDG. Las tablas de marcas llevan la nota "solo como referencia" (`markNote`).
 - Teléfono, WhatsApp y dominio solo por variables de entorno. Sin logos de terceros (Zebra, Datamax, WhatsApp, IATA): solo los nombres en texto. El ícono de WhatsApp es un globo de chat genérico.
 - JSON-LD: Liji Tech es `Organization`. El `LocalBusiness` es de **Eti-Label** y solo va en `/factory`. `Product` sin `offers` ni precio.
-- Medición: cada enlace de WhatsApp o llamada lleva `data-track="whatsapp|call"` y `data-track-location="<lugar>"`. `ClickTracker` registra `whatsapp_click` o `call_click` con `location`, `page` y `lang`.
+- Medición: cada enlace de WhatsApp, llamada o correo lleva `data-track="whatsapp|call|email"` y `data-track-location="<lugar>"`. `ClickTracker` registra `whatsapp_click`, `call_click` o `email_click` con `location`, `page` y `lang`.
 
 ## Decisiones técnicas (Next 16.4 con cacheComponents)
 - `dynamicParams`, `dynamic` y `revalidate` no se pueden exportar. Las rutas `[slug]` usan `generateStaticParams` + `notFound()`.
@@ -100,15 +100,18 @@ propuesta-diseno/            propuesta de diseño aprobada (A), textos v2 y cues
 
 ## Pendientes del cliente
 - [ ] **Dominio** (`NEXT_PUBLIC_SITE_URL`). Mientras no exista, el sitio usa la URL de producción de Vercel.
-- [ ] **WhatsApp de la dueña** (`NEXT_PUBLIC_WHATSAPP_NUMBER`). Si queda vacío, los botones usan el teléfono +1 (305) 303-0985.
+- [x] WhatsApp de la dueña: el mismo número del teléfono (`NEXT_PUBLIC_WHATSAPP_NUMBER=13053030985`).
 - [x] Teléfono: +1 (305) 303-0985.
-- [ ] Confirmar la dirección 6977 NW 82nd Ave, Miami, FL 33166 y el horario de atención.
+- [x] Horario de la planta y retiro en planta: lunes a jueves 7:30 a. m. a 5:00 p. m., viernes 7:30 a. m. a 4:00 p. m. (`content/site.ts`). Falta confirmar sábado y domingo (hoy no se publican).
+- [x] Eti-Label en Miami desde 2000; Liji Tech registrada en 2021.
+- [x] Órdenes de compra por correo: lijitechcorp@gmail.com. Pago: Zelle o cheque. Entrega: alrededor de una semana con arte y plancha listos en planta; una etiqueta nueva pasa antes por arte, diseño y plancha.
+- [ ] Confirmar la dirección 6977 NW 82nd Ave, Miami, FL 33166.
 - [ ] **Logo SVG** de Liji Tech y verde exacto. Hoy: rombo provisional en `components/layout/Logo.tsx`, verde `#08703F` en `app/globals.css` (oscurecido desde `#0A7A45` para pasar contraste AA).
 - [ ] **Fotos reales** de la planta, la prensa y los rollos, para `/factory` y las páginas de producto (`public/photos/`, con `next/image`). Hoy se usan ilustraciones SVG.
-- [ ] Contenido de `/factory`: año de fundación, equipos, proceso real, si se puede recoger en planta. Ver `propuesta-diseno/preguntas-cliente.md`.
+- [ ] Contenido de `/factory`: equipos (prensas, colores, ancho), proceso real, personas. Ver `propuesta-diseno/preguntas-cliente.md`.
 - [ ] Medición: confirmar si se usa solo Vercel Analytics o también GA4 (`NEXT_PUBLIC_GA_ID`). Activar Web Analytics en el proyecto de Vercel.
 - [ ] Estudio de palabras clave de Camilo: slugs definitivos y páginas nuevas.
-- [ ] Confirmación escrita del cliente antes de cualquier mención de cumplimiento normativo.
+- [ ] Cumplimiento: la cliente dice que las etiquetas de riesgo están "aprobadas por IATA". IATA no aprueba fabricantes de etiquetas; falta acordar la redacción exacta (propuesta: "fabricadas según las especificaciones de la Reglamentación sobre Mercancías Peligrosas de IATA") y un respaldo escrito antes de publicarlo.
 - [ ] Revisar con el cliente las equivalencias de la tabla "¿Qué está enviando?" (`whoProducts` en `content/strings.ts`) y los tamaños de ejemplo de los dibujos de etiquetas de carga y manejo.
 - [ ] Ficha de Google de Eti-Label: enlazarla a `/factory` cuando el sitio esté en el dominio.
 - [ ] Google Search Console: `GOOGLE_SITE_VERIFICATION` y enviar el sitemap.

@@ -26,7 +26,7 @@ export function ClickTracker() {
         page: window.location.pathname,
         lang: document.documentElement.lang || "en",
       };
-      const name = channel === "call" ? "call_click" : "whatsapp_click";
+      const name = channel === "call" ? "call_click" : channel === "email" ? "email_click" : "whatsapp_click";
       track(name, props);
       window.gtag?.("event", name, props);
     }

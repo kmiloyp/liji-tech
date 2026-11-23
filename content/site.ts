@@ -36,10 +36,24 @@ export const site = {
   phoneDisplay: required("NEXT_PUBLIC_PHONE_DISPLAY", process.env.NEXT_PUBLIC_PHONE_DISPLAY),
   gaId: clean(process.env.NEXT_PUBLIC_GA_ID),
   googleVerification: clean(process.env.GOOGLE_SITE_VERIFICATION),
+  /** Correo para órdenes de compra (confirmado por la cliente, 23 nov 2026). */
+  orderEmail: "lijitechcorp@gmail.com",
+  /** Año en que se registró Liji Tech. */
+  founded: "2021",
   manufacturer: {
     name: "Eti-Label Inc.",
     shortName: "Eti-Label",
+    /** Año desde el que la planta opera en Miami. */
+    since: "2000",
   },
+  /**
+   * Horario de la planta (atención y retiro de pedidos). Hora de Miami.
+   * Solo se publican los días confirmados por la cliente.
+   */
+  hours: [
+    { days: ["Monday", "Tuesday", "Wednesday", "Thursday"], opens: "07:30", closes: "17:00" },
+    { days: ["Friday"], opens: "07:30", closes: "16:00" },
+  ],
   address: {
     street: "6977 NW 82nd Ave",
     city: "Miami",

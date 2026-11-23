@@ -4,6 +4,7 @@ import { ProcessArt } from "@/components/labels/ProcessArt";
 import { ProductArt } from "@/components/labels/ProductArt";
 import { Breadcrumbs } from "@/components/layout/Breadcrumbs";
 import { PageShell } from "@/components/layout/PageShell";
+import { PlantInfo } from "@/components/layout/PlantInfo";
 import { ProcessScroll } from "@/components/motion/ProcessScroll";
 import { JsonLd } from "@/components/seo/JsonLd";
 import type { Lang } from "@/content/catalog";
@@ -39,6 +40,7 @@ export function FactoryView({ lang }: { lang: Lang }) {
               )}
             </h1>
             <p className="mt-5 max-w-[56ch] text-lg leading-relaxed">{f.lede}</p>
+            <p className="mt-3 max-w-[56ch] text-ink-2">{f.since}</p>
             <address className="mt-6 not-italic">
               <p className="font-display text-2xl font-bold">{site.manufacturer.name}</p>
               <p className="text-ink-2">{addressLine}</p>
@@ -107,6 +109,9 @@ export function FactoryView({ lang }: { lang: Lang }) {
             <WhatsAppButton message={s.waDefault} label={s.home.ctaWa} location="factory" />
             <CallButton lang={lang} location="factory" />
           </div>
+        </div>
+        <div className="wrap mt-12 border-t border-rule pt-10">
+          <PlantInfo lang={lang} location="factory" />
         </div>
       </section>
 

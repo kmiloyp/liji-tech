@@ -107,6 +107,16 @@ const en = {
     ],
     ["Which ribbons do you carry?", "Zebra 110 mm × 74 m, Zebra 110 mm × 450 m and Datamax 110 mm × 360 m."],
     [
+      "Can I pick up my order at the plant?",
+      "Yes, at {addr}. The plant is open Monday to Thursday from 7:30 am to 5:00 pm and Friday from 7:30 am to 4:00 pm.",
+    ],
+    [
+      "How long does an order take?",
+      "It depends on the label. A new label first goes through artwork, design and plate. Once everything is ready at the plant, delivery takes about one week.",
+    ],
+    ["Can I send a purchase order?", "Yes. Email your purchase order to {email}."],
+    ["How can I pay?", "By Zelle or by check."],
+    [
       "How do I get a price?",
       "Send a WhatsApp message or call {tel} with the label, the size and the quantity. We answer in English or Spanish.",
     ],
@@ -186,6 +196,17 @@ const en = {
     ["Roll", "Labels are cut and wound on rolls, ready for your boxes or your printer."],
   ] as [string, string][],
 
+  plant: {
+    hoursH: "Plant hours",
+    hours: ["Monday to Thursday", "7:30 am to 5:00 pm", "Friday", "7:30 am to 4:00 pm"],
+    pickup: "You can pick up your order at the plant.",
+    poH: "Purchase orders",
+    poP: "Email your purchase order to",
+    pay: "Payment by Zelle or check.",
+    leadH: "Lead time",
+    leadP: "A new label first goes through artwork, design and plate. Once everything is ready at the plant, delivery takes about one week.",
+  },
+
   factory: {
     title: "Eti-Label Plant in Miami, FL 33166 | Liji Tech",
     description:
@@ -193,11 +214,12 @@ const en = {
     name: "Factory",
     h1: "The Eti-Label plant, Miami",
     lede: "Every Liji Tech label is printed by Eti-Label Inc. in its own plant near Miami International Airport. Liji Tech is the direct sales line of that plant.",
+    since: "Eti-Label has printed labels in Miami since 2000. Liji Tech has sold them directly since 2021.",
     whatH: "What we make here",
     whatP: "Hazard class labels and placards, lithium battery marks, air cargo and handling labels, and custom labels in flexography. We also supply blank thermal labels and ribbons.",
     howH: "How a label is made",
     visitH: "Find us",
-    visitP: "Orders and questions by WhatsApp or phone, in English or Spanish.",
+    visitP: "Orders and questions by WhatsApp, phone or email, in English or Spanish.",
     mapLink: "Open in Google Maps",
   },
 
@@ -331,6 +353,16 @@ const es: Strings = {
     ],
     ["¿Qué ribbons manejan?", "Zebra 110 mm × 74 m, Zebra 110 mm × 450 m y Datamax 110 mm × 360 m."],
     [
+      "¿Puedo recoger mi pedido en la planta?",
+      "Sí, en {addr}. La planta atiende de lunes a jueves de 7:30 a. m. a 5:00 p. m. y los viernes de 7:30 a. m. a 4:00 p. m.",
+    ],
+    [
+      "¿Cuánto tarda un pedido?",
+      "Depende de la etiqueta. Una etiqueta nueva primero pasa por arte, diseño y plancha. Con todo listo en la planta, la entrega toma alrededor de una semana.",
+    ],
+    ["¿Puedo enviar una orden de compra?", "Sí. Envíe su orden de compra por correo a {email}."],
+    ["¿Cómo puedo pagar?", "Con Zelle o con cheque."],
+    [
       "¿Cómo pido un precio?",
       "Envíe un mensaje de WhatsApp o llame al {tel} con la etiqueta, el tamaño y la cantidad. Atendemos en español o inglés.",
     ],
@@ -410,6 +442,17 @@ const es: Strings = {
     ["Rollo", "Las etiquetas se cortan y se enrollan, listas para sus cajas o su impresora."],
   ],
 
+  plant: {
+    hoursH: "Horario de la planta",
+    hours: ["Lunes a jueves", "7:30 a. m. a 5:00 p. m.", "Viernes", "7:30 a. m. a 4:00 p. m."],
+    pickup: "Puede recoger su pedido en la planta.",
+    poH: "Órdenes de compra",
+    poP: "Envíe su orden de compra por correo a",
+    pay: "Pago con Zelle o cheque.",
+    leadH: "Tiempo de entrega",
+    leadP: "Una etiqueta nueva primero pasa por arte, diseño y plancha. Con todo listo en la planta, la entrega toma alrededor de una semana.",
+  },
+
   factory: {
     title: "Planta Eti-Label en Miami, FL 33166 | Liji Tech",
     description:
@@ -417,11 +460,12 @@ const es: Strings = {
     name: "Fábrica",
     h1: "La planta Eti-Label, Miami",
     lede: "Cada etiqueta de Liji Tech la imprime Eti-Label Inc. en su propia planta, cerca del Aeropuerto Internacional de Miami. Liji Tech es la línea de venta directa de esa planta.",
+    since: "Eti-Label imprime etiquetas en Miami desde el año 2000. Liji Tech las vende directamente desde 2021.",
     whatH: "Lo que fabricamos aquí",
     whatP: "Etiquetas y placards de clases de riesgo, marcas de baterías de litio, etiquetas de carga aérea y de manejo, y etiquetas a medida en flexografía. También ofrecemos etiquetas térmicas en blanco y ribbons.",
     howH: "Cómo se hace una etiqueta",
     visitH: "Dónde estamos",
-    visitP: "Pedidos y preguntas por WhatsApp o por teléfono, en español o inglés.",
+    visitP: "Pedidos y preguntas por WhatsApp, teléfono o correo, en español o inglés.",
     mapLink: "Abrir en Google Maps",
   },
 
