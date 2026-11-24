@@ -240,6 +240,12 @@
     padding-left: 0.6rem;
   }
 
+  /* Secciones fuera de pantalla: el navegador no las calcula hasta que se acercan. */
+  .cv-auto {
+    content-visibility: auto;
+    contain-intrinsic-size: auto 900px;
+  }
+
   /* Hoja de papel sobre el respaldo (tarjetas que contienen etiquetas) */
   .sheet {
     background: var(--label);

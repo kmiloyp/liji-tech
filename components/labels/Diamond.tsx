@@ -109,9 +109,11 @@ export type DiamondProps = {
   title?: string;
   className?: string;
   style?: CSSProperties;
+  /** Sombra dibujada dentro del SVG (más barata que un filtro CSS drop-shadow). */
+  shadow?: boolean;
 };
 
-export function Diamond({ hazard, title, className, style }: DiamondProps) {
+export function Diamond({ hazard, title, className, style, shadow }: DiamondProps) {
   const ink = hazard.ink === "white" ? WHITE : BLACK;
   const borderInk = solid(hazard.style) ? WHITE : BLACK;
   const numberInk = hazard.style === "dm-wb" || solid(hazard.style) ? WHITE : BLACK;
@@ -133,7 +135,9 @@ export function Diamond({ hazard, title, className, style }: DiamondProps) {
       aria-label={title}
       aria-hidden={title ? undefined : true}
       focusable="false"
+      overflow="visible"
     >
+      {shadow && <polygon points={OUTER} transform="translate(0 3.5)" fill="rgb(6 40 24 / 0.14)" />}
       <Background style={hazard.style} />
       <polygon points={INNER} fill="none" stroke={borderInk} strokeWidth="1.1" />
       <PictogramMark kind={hazard.pictogram} color={ink} />

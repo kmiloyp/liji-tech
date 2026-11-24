@@ -84,8 +84,8 @@ export function HomeView({ lang }: { lang: Lang }) {
                 "--fx": `${(c - 1) * 14}px`,
               } as CSSProperties;
               return (
-                <div key={id} className="stick absolute drop-shadow-[0_8px_10px_rgb(6_40_24/0.18)]" style={style}>
-                  <Diamond hazard={hazardById(id)} className="block w-full" />
+                <div key={id} className="stick absolute" style={style}>
+                  <Diamond hazard={hazardById(id)} className="block w-full" shadow />
                 </div>
               );
             })}
@@ -202,7 +202,7 @@ export function HomeView({ lang }: { lang: Lang }) {
       </section>
 
       {/* ---------- Según lo que envía ---------- */}
-      <section aria-labelledby="who-h" className="py-16 md:py-24">
+      <section aria-labelledby="who-h" className="cv-auto py-16 md:py-24">
         <div className="wrap">
           <h2 id="who-h" className="h2">
             {h.whoH}
@@ -241,7 +241,7 @@ export function HomeView({ lang }: { lang: Lang }) {
       </section>
 
       {/* ---------- A medida ---------- */}
-      <section aria-labelledby="custom-h" className="bg-brand text-brand-ink">
+      <section aria-labelledby="custom-h" className="cv-auto bg-brand text-brand-ink">
         <div className="wrap grid items-center gap-10 py-16 md:grid-cols-[1.1fr_1fr] md:py-24">
           <div>
             <h2 id="custom-h" className="h2">
@@ -276,7 +276,7 @@ export function HomeView({ lang }: { lang: Lang }) {
       </section>
 
       {/* ---------- Guía de marcas ---------- */}
-      <section aria-labelledby="guide-h" className="py-16 md:py-24">
+      <section aria-labelledby="guide-h" className="cv-auto py-16 md:py-24">
         <div className="wrap">
           <h2 id="guide-h" className="h2">
             {h.guideH}
@@ -329,7 +329,7 @@ export function HomeView({ lang }: { lang: Lang }) {
       </section>
 
       {/* ---------- Preguntas ---------- */}
-      <section aria-labelledby="faq-h" className="border-t border-rule bg-liner py-16 md:py-24">
+      <section aria-labelledby="faq-h" className="cv-auto border-t border-rule bg-liner py-16 md:py-24">
         <div className="wrap grid gap-8 md:grid-cols-[1fr_2fr]">
           <h2 id="faq-h" className="h2">
             {h.faqH}
@@ -339,7 +339,7 @@ export function HomeView({ lang }: { lang: Lang }) {
       </section>
 
       {/* ---------- Contacto ---------- */}
-      <section aria-labelledby="contact-h" className="py-16 md:py-24">
+      <section aria-labelledby="contact-h" className="cv-auto py-16 md:py-24">
         <div className="wrap grid items-end gap-10 md:grid-cols-[1.4fr_1fr]">
           <div>
             <h2 id="contact-h" className="display text-[clamp(2.6rem,6vw,5rem)]">

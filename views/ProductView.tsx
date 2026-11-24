@@ -218,7 +218,7 @@ function Showcase({ lang, id }: { lang: Lang; id: string }) {
         <ul className="wrap grid grid-cols-2 gap-x-4 gap-y-8 sm:grid-cols-3 lg:grid-cols-6">
           {hazardClasses.map((h) => (
             <li key={h.id} className="flex flex-col items-center text-center">
-              <Diamond hazard={h} className="w-full max-w-40 drop-shadow-[0_6px_8px_rgb(6_40_24/0.16)]" />
+              <Diamond hazard={h} className="w-full max-w-40" shadow />
               <span className="data mt-2 text-ink-2">
                 {lang === "en" ? "Class" : "Clase"} {h.number}
               </span>
@@ -235,7 +235,7 @@ function Showcase({ lang, id }: { lang: Lang; id: string }) {
         <ul className="wrap grid grid-cols-2 gap-6 md:grid-cols-5">
           {lithiumMarks.map((m) => (
             <li key={m} className="flex flex-col items-center">
-              <LithiumMark un={m} className="w-full max-w-44 drop-shadow-sm" />
+              <LithiumMark un={m} className="w-full max-w-44" />
               <span className="data mt-2">{m} · 4.5 × 5 in</span>
             </li>
           ))}

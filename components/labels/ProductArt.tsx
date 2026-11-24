@@ -15,7 +15,7 @@ export function ProductArt({ id, size = "md" }: { id: string; size?: "md" | "lg"
             <Diamond
               key={h}
               hazard={hazardById(h)}
-              className={`${lg ? "size-36" : "size-[4.6rem]"} drop-shadow-sm`}
+              className={`${lg ? "size-36" : "size-[4.6rem]"}`}
               style={{ transform: `translateY(${i % 2 ? -8 : 0}px)` }}
             />
           ))}
@@ -24,28 +24,28 @@ export function ProductArt({ id, size = "md" }: { id: string; size?: "md" | "lg"
     case "hazmat-placards":
       return (
         <div className="relative">
-          <Diamond hazard={hazardById("3-flammable-liquid")} className={`${lg ? "size-64" : "size-28"} drop-shadow-md`} />
+          <Diamond hazard={hazardById("3-flammable-liquid")} className={`${lg ? "size-64" : "size-28"}`} />
         </div>
       );
     case "lithium-battery-labels":
       return (
         <div className="flex items-end gap-2">
-          <LithiumMark un="UN3481" className={`${lg ? "w-44" : "w-[4.6rem]"} drop-shadow-sm`} />
-          <Diamond hazard={hazardById("9-miscellaneous")} className={`${lg ? "size-36" : "size-[4.2rem]"} drop-shadow-sm`} />
+          <LithiumMark un="UN3481" className={`${lg ? "w-44" : "w-[4.6rem]"}`} />
+          <Diamond hazard={hazardById("9-miscellaneous")} className={`${lg ? "size-36" : "size-[4.2rem]"}`} />
         </div>
       );
     case "air-cargo-labels":
       return (
         <div className="flex items-end gap-2">
-          <CargoTag design={tagDesigns.cargoAircraftOnly} className={`${lg ? "w-40" : "w-[4.6rem]"} drop-shadow-sm`} />
-          <CargoTag design={tagDesigns.rushAog} className={`${lg ? "w-32" : "w-16"} drop-shadow-sm`} />
+          <CargoTag design={tagDesigns.cargoAircraftOnly} className={`${lg ? "w-40" : "w-[4.6rem]"}`} />
+          <CargoTag design={tagDesigns.rushAog} className={`${lg ? "w-32" : "w-16"}`} />
         </div>
       );
     case "handling-labels":
       return (
         <div className="flex items-end gap-2">
-          <CargoTag design={tagDesigns.fragile} className={`${lg ? "w-52" : "w-28"} drop-shadow-sm`} />
-          <CargoTag design={tagDesigns.thisSideUp} className={`${lg ? "w-28" : "w-14"} drop-shadow-sm`} />
+          <CargoTag design={tagDesigns.fragile} className={`${lg ? "w-52" : "w-28"}`} />
+          <CargoTag design={tagDesigns.thisSideUp} className={`${lg ? "w-28" : "w-14"}`} />
         </div>
       );
     case "thermal-labels":
@@ -77,11 +77,11 @@ export function ProductArt({ id, size = "md" }: { id: string; size?: "md" | "lg"
           <div className={`flex flex-col ${lg ? "gap-3" : "gap-1.5"}`}>
             <CargoTag
               design={{ lines: ["YOUR", "BRAND"], bg: "#08703F", fg: "#FFFFFF", ratio: 1.4 }}
-              className={`${lg ? "w-40" : "w-20"} drop-shadow-sm`}
+              className={`${lg ? "w-40" : "w-20"}`}
             />
             <CargoTag
               design={{ lines: ["YOUR LOGO"], bg: "#FFC72C", fg: "#141414", ratio: 2.4 }}
-              className={`${lg ? "w-40" : "w-20"} drop-shadow-sm`}
+              className={`${lg ? "w-40" : "w-20"}`}
             />
           </div>
         </div>
