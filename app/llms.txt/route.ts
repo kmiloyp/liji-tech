@@ -26,6 +26,7 @@ function build() {
   lines.push(`- Plant hours (pickup available): ${en.plant.hours[0]} ${en.plant.hours[1]}; ${en.plant.hours[2]} ${en.plant.hours[3]}.`);
   lines.push(`- Lead time: ${en.plant.leadP}`);
   lines.push(`- Payment: Zelle or check.`);
+  lines.push("- Hazard labels and marks are made to the specifications of the IATA Dangerous Goods Regulations.");
   lines.push("- Printing method: flexography. Stock labels and custom labels.");
   lines.push("- Languages: English and Spanish.");
   lines.push("- No public prices: ask by WhatsApp or phone.", "");

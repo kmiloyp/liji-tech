@@ -25,12 +25,17 @@ const product: Product = {
       },
     ],
     notes: [
+      "Our hazard labels and marks are made to the specifications of the IATA Dangerous Goods Regulations.",
       "Need the same classes in a bigger size for a truck or a container? See the 10.75 × 10.75 in placards.",
     ],
     faq: [
       [
         "Which hazard class labels can I order?",
         "Class 2 flammable, non-flammable and toxic gas; Class 3 flammable liquid; Class 4 flammable solid and spontaneously combustible; Class 5.1 oxidizer; Class 5.2 organic peroxide; Class 6 toxic; Class 8 corrosive and Class 9 miscellaneous.",
+      ],
+      [
+        "Are your labels made to IATA specifications?",
+        "Yes. Our hazard labels and marks are made to the specifications of the IATA Dangerous Goods Regulations.",
       ],
       [
         "Do you print other sizes or wording?",
@@ -61,12 +66,17 @@ const product: Product = {
       },
     ],
     notes: [
+      "Nuestras etiquetas y marcas de riesgo se fabrican según las especificaciones de la Reglamentación sobre Mercancías Peligrosas de IATA.",
       "¿Necesita las mismas clases en tamaño grande para un camión o un contenedor? Vea los placards de 10.75 × 10.75 in.",
     ],
     faq: [
       [
         "¿Qué etiquetas de clases de riesgo puedo pedir?",
         "Clase 2 gas inflamable, no inflamable y tóxico; Clase 3 líquido inflamable; Clase 4 sólido inflamable y combustión espontánea; Clase 5.1 comburente; Clase 5.2 peróxido orgánico; Clase 6 tóxico; Clase 8 corrosivo y Clase 9 misceláneos.",
+      ],
+      [
+        "¿Sus etiquetas cumplen las especificaciones de IATA?",
+        "Sí. Nuestras etiquetas y marcas de riesgo se fabrican según las especificaciones de la Reglamentación sobre Mercancías Peligrosas de IATA.",
       ],
       [
         "¿Imprimen otros tamaños u otro texto?",

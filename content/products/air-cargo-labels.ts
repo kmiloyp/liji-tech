@@ -24,6 +24,7 @@ const product: Product = {
         rows: airCargoLabels.map((l) => [l.en, l.size]),
       },
     ],
+    notes: ["Our hazard labels and marks are made to the specifications of the IATA Dangerous Goods Regulations."],
     faq: [
       [
         "What does Rush AOG mean?",
@@ -57,6 +58,7 @@ const product: Product = {
         rows: airCargoLabels.map((l) => [l.es, l.size]),
       },
     ],
+    notes: ["Nuestras etiquetas y marcas de riesgo se fabrican según las especificaciones de la Reglamentación sobre Mercancías Peligrosas de IATA."],
     faq: [
       [
         "¿Qué significa Rush AOG?",

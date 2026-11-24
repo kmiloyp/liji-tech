@@ -80,7 +80,7 @@ propuesta-diseno/            propuesta de diseño aprobada (A), textos v2 y cues
 - Texto dentro de las etiquetas dibujadas: en inglés, como se imprime. En español se trata al lector de "usted".
 - Sin guiones largos (—) en textos visibles. El verde de marca es el único color de interfaz; los colores reglamentarios van solo dentro de las etiquetas.
 - **No inventar datos del negocio:** precios, mínimos, plazos, cifras, años, certificaciones, clientes, reseñas. Si falta un dato, va a Pendientes.
-- **No afirmar cumplimiento** de 49 CFR, IATA o IMDG. Las tablas de marcas llevan la nota "solo como referencia" (`markNote`).
+- **Cumplimiento:** la cliente confirmó IATA (24 nov 2026). Se publica solo esta frase, en etiquetas de clases de riesgo, baterías de litio y carga aérea: "fabricadas según las especificaciones de la Reglamentación sobre Mercancías Peligrosas de IATA". No decir "aprobadas/certificadas por IATA" sin ver el documento. No afirmar 49 CFR ni IMDG. Las tablas de marcas siguen con la nota "solo como referencia" (`markNote`): la clasificación es del expedidor.
 - Teléfono, WhatsApp y dominio solo por variables de entorno. Sin logos de terceros (Zebra, Datamax, WhatsApp, IATA): solo los nombres en texto. El ícono de WhatsApp es un globo de chat genérico.
 - JSON-LD: Liji Tech es `Organization`. El `LocalBusiness` es de **Eti-Label** y solo va en `/factory`. `Product` sin `offers` ni precio.
 - Medición: cada enlace de WhatsApp, llamada o correo lleva `data-track="whatsapp|call|email"` y `data-track-location="<lugar>"`. `ClickTracker` registra `whatsapp_click`, `call_click` o `email_click` con `location`, `page` y `lang`.
@@ -96,6 +96,7 @@ propuesta-diseno/            propuesta de diseño aprobada (A), textos v2 y cues
 ## Estado de calidad (build local, Lighthouse móvil, 23 nov 2026)
 - Rendimiento 95–98 · Accesibilidad 100 · Buenas prácticas 100 · SEO 100. LCP 2,3–2,4 s, CLS ≤ 0,001.
 - Las 26 URL del sitemap tienen un H1, canonical, hreflang en/es/x-default y JSON-LD que se puede leer.
+- PageSpeed Insights (celular, 24 nov 2026, portada): rendimiento 96, accesibilidad 100, recomendaciones 100, SEO 100. FCP y LCP 1,7 s, TBT 50 ms, CLS 0. Speed Index 4,8 s (por la entrada animada del hero).
 - En vivo (https://liji-tech.vercel.app, 24 nov 2026, Lighthouse móvil desde el contenedor de desarrollo): accesibilidad, buenas prácticas y SEO 100 en todas; rendimiento 85–91 en la portada, 92 en térmicas y 95 en fábrica. LCP 2,1–2,5 s, CLS 0. El TBT varía de 290 a 540 ms entre corridas iguales porque depende de la CPU del contenedor: medir también con PageSpeed Insights.
 - Ya aplicado para rendimiento: sombras dentro del SVG (sin filtros `drop-shadow`), `content-visibility: auto` en secciones bajas de la portada y Motion con `LazyMotion` + `m`.
 - Si la portada sigue por debajo de 90 en PageSpeed Insights: lo siguiente es aligerar la cinta de rollo (menos etiquetas) y cargar el buscador y el armador solo cuando se acercan a la pantalla.
@@ -114,7 +115,8 @@ propuesta-diseno/            propuesta de diseño aprobada (A), textos v2 y cues
 - [ ] Contenido de `/factory`: equipos (prensas, colores, ancho), proceso real, personas. Ver `propuesta-diseno/preguntas-cliente.md`.
 - [ ] Medición: confirmar si se usa solo Vercel Analytics o también GA4 (`NEXT_PUBLIC_GA_ID`). Activar Web Analytics en el proyecto de Vercel.
 - [ ] Estudio de palabras clave de Camilo: slugs definitivos y páginas nuevas.
-- [ ] Cumplimiento: la cliente dice que las etiquetas de riesgo están "aprobadas por IATA". IATA no aprueba fabricantes de etiquetas; falta acordar la redacción exacta (propuesta: "fabricadas según las especificaciones de la Reglamentación sobre Mercancías Peligrosas de IATA") y un respaldo escrito antes de publicarlo.
+- [x] IATA: publicada la frase "fabricadas según las especificaciones de la Reglamentación sobre Mercancías Peligrosas de IATA".
+- [ ] Pedir a la cliente el documento de IATA que tiene (certificado, carta o registro). Según lo que diga, se puede nombrar con más precisión. IATA no tiene un programa conocido de aprobación de fabricantes de etiquetas.
 - [ ] Revisar con el cliente las equivalencias de la tabla "¿Qué está enviando?" (`whoProducts` en `content/strings.ts`) y los tamaños de ejemplo de los dibujos de etiquetas de carga y manejo.
 - [ ] Ficha de Google de Eti-Label: enlazarla a `/factory` cuando el sitio esté en el dominio.
 - [ ] Google Search Console: `GOOGLE_SITE_VERIFICATION` y enviar el sitemap.

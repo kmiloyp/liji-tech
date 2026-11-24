@@ -29,6 +29,7 @@ const product: Product = {
         ],
       },
     ],
+    notes: ["Our hazard labels and marks are made to the specifications of the IATA Dangerous Goods Regulations."],
     faq: [
       [
         "Which lithium battery mark do I need?",
@@ -61,6 +62,7 @@ const product: Product = {
         ],
       },
     ],
+    notes: ["Nuestras etiquetas y marcas de riesgo se fabrican según las especificaciones de la Reglamentación sobre Mercancías Peligrosas de IATA."],
     faq: [
       [
         "¿Qué marca de baterías de litio necesito?",
