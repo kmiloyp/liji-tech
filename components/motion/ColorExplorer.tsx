@@ -1,16 +1,17 @@
 "use client";
 
-import { AnimatePresence, motion, useReducedMotion } from "motion/react";
+import { AnimatePresence, m, useReducedMotion } from "motion/react";
 import { useState } from "react";
 import type { ThermalColor } from "@/content/catalog";
 import { ThermalRoll } from "../labels/ThermalRoll";
+import { Lazy } from "./Lazy";
 
 /**
  * Explorador de colores térmicos: al elegir un color, el rollo ilustrado
  * cambia de color y muestra su código. Los 34 colores están en el HTML
  * como botones con su código y referencia.
  */
-export function ColorExplorer({
+function ColorExplorerInner({
   groups,
   labels,
 }: {
@@ -24,7 +25,7 @@ export function ColorExplorer({
     <div className="grid items-start gap-8 lg:grid-cols-[1fr_1.15fr]">
       <div className="sheet top-28 grid place-items-center gap-4 p-8 lg:sticky">
         <AnimatePresence mode="popLayout" initial={false}>
-          <motion.div
+          <m.div
             key={sel.code}
             initial={reduce ? false : { opacity: 0, rotate: -6, y: 10 }}
             animate={{ opacity: 1, rotate: 0, y: 0 }}
@@ -33,7 +34,7 @@ export function ColorExplorer({
             className="w-full max-w-xs"
           >
             <ThermalRoll color={sel.hexAprox} title={labels.rollAlt.replace("{code}", sel.code)} className="w-full" />
-          </motion.div>
+          </m.div>
         </AnimatePresence>
         <dl className="data grid w-full max-w-xs grid-cols-2 gap-2 text-label-ink" aria-live="polite">
           <div className="rounded border border-black/10 px-3 py-2">
@@ -80,5 +81,14 @@ export function ColorExplorer({
         ))}
       </div>
     </div>
+  );
+}
+
+/** Envoltura con carga diferida de Motion. */
+export function ColorExplorer(props: Parameters<typeof ColorExplorerInner>[0]) {
+  return (
+    <Lazy>
+      <ColorExplorerInner {...props} />
+    </Lazy>
   );
 }

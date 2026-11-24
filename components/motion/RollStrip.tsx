@@ -1,7 +1,8 @@
 "use client";
 
-import { motion, useReducedMotion, useScroll, useTransform } from "motion/react";
+import { m, useReducedMotion, useScroll, useTransform } from "motion/react";
 import { useRef, type ReactNode } from "react";
+import { Lazy } from "./Lazy";
 
 /**
  * Cinta de rollo: una tira continua de etiquetas que avanza en horizontal
@@ -9,7 +10,7 @@ import { useRef, type ReactNode } from "react";
  * renderizados desde el servidor; aquí solo se mueve el contenedor (transform).
  * Con movimiento reducido, la tira queda quieta y se puede desplazar a mano.
  */
-export function RollStrip({ children, label }: { children: ReactNode; label: string }) {
+function RollStripInner({ children, label }: { children: ReactNode; label: string }) {
   const ref = useRef<HTMLDivElement>(null);
   const reduce = useReducedMotion();
   const { scrollYProgress } = useScroll({ target: ref, offset: ["start end", "end start"] });
@@ -23,9 +24,18 @@ export function RollStrip({ children, label }: { children: ReactNode; label: str
       className={`relative ${reduce ? "overflow-x-auto" : "overflow-hidden"}`}
       tabIndex={reduce ? 0 : undefined}
     >
-      <motion.div style={reduce ? undefined : { x }} className="flex w-max will-change-transform">
+      <m.div style={reduce ? undefined : { x }} className="flex w-max will-change-transform">
         {children}
-      </motion.div>
+      </m.div>
     </div>
+  );
+}
+
+/** Envoltura con carga diferida de Motion. */
+export function RollStrip(props: Parameters<typeof RollStripInner>[0]) {
+  return (
+    <Lazy>
+      <RollStripInner {...props} />
+    </Lazy>
   );
 }

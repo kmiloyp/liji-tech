@@ -1,7 +1,8 @@
 "use client";
 
-import { motion, useMotionValueEvent, useReducedMotion, useScroll } from "motion/react";
+import { m, useMotionValueEvent, useReducedMotion, useScroll } from "motion/react";
 import { useRef, useState, type ReactNode } from "react";
+import { Lazy } from "./Lazy";
 
 /**
  * Proceso ligado al scroll: arte → plancha → prensa → rollo.
@@ -9,7 +10,7 @@ import { useRef, useState, type ReactNode } from "react";
  * según el avance (solo opacity/transform). En celular cada paso muestra su
  * propia ilustración. Todo el texto viene del servidor.
  */
-export function ProcessScroll({ steps, frames }: { steps: [string, string][]; frames: ReactNode[] }) {
+function ProcessScrollInner({ steps, frames }: { steps: [string, string][]; frames: ReactNode[] }) {
   const ref = useRef<HTMLDivElement>(null);
   const reduce = useReducedMotion();
   const [active, setActive] = useState(0);
@@ -25,7 +26,7 @@ export function ProcessScroll({ steps, frames }: { steps: [string, string][]; fr
         <div className="sticky top-28">
           <div className="sheet relative aspect-[4/3] overflow-hidden">
             {frames.map((f, i) => (
-              <motion.div
+              <m.div
                 key={i}
                 className="absolute inset-0 flex items-center justify-center p-10"
                 initial={false}
@@ -38,12 +39,12 @@ export function ProcessScroll({ steps, frames }: { steps: [string, string][]; fr
                 aria-hidden={active !== i}
               >
                 {f}
-              </motion.div>
+              </m.div>
             ))}
             <div className="absolute inset-x-6 bottom-5 flex gap-1.5" aria-hidden="true">
               {steps.map((_, i) => (
                 <span key={i} className="h-1 flex-1 overflow-hidden rounded-full bg-black/10">
-                  <motion.span
+                  <m.span
                     className="block h-full origin-left bg-[#08703F]"
                     initial={false}
                     animate={{ scaleX: active >= i ? 1 : 0 }}
@@ -74,5 +75,14 @@ export function ProcessScroll({ steps, frames }: { steps: [string, string][]; fr
         ))}
       </ol>
     </div>
+  );
+}
+
+/** Envoltura con carga diferida de Motion. */
+export function ProcessScroll(props: Parameters<typeof ProcessScrollInner>[0]) {
+  return (
+    <Lazy>
+      <ProcessScrollInner {...props} />
+    </Lazy>
   );
 }

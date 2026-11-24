@@ -1,9 +1,10 @@
 "use client";
 
-import { AnimatePresence, motion, useReducedMotion } from "motion/react";
+import { AnimatePresence, m, useReducedMotion } from "motion/react";
 import { useEffect, useId, useRef, useState } from "react";
 import type { Strings } from "@/content/strings";
 import { ChatIcon } from "../conversion/icons";
+import { Lazy } from "./Lazy";
 
 type PageLink = { id: string; name: string; href: string };
 
@@ -12,7 +13,7 @@ type PageLink = { id: string; name: string; href: string };
  * que terminan en una lista para empezar y un WhatsApp con el mensaje armado.
  * Es orientativo: no clasifica la mercancía.
  */
-export function LabelFinder({
+function LabelFinderInner({
   s,
   who,
   whoProducts,
@@ -98,7 +99,7 @@ export function LabelFinder({
       <ol className="mb-6 flex gap-2" aria-hidden="true">
         {[0, 1, 2].map((i) => (
           <li key={i} className="h-1.5 flex-1 overflow-hidden rounded-full bg-liner-2">
-            <motion.span
+            <m.span
               className="block h-full origin-left rounded-full bg-brand"
               initial={false}
               animate={{ scaleX: step > i ? 1 : 0 }}
@@ -110,7 +111,7 @@ export function LabelFinder({
 
       <AnimatePresence mode="wait" initial={false}>
         {result ? (
-          <motion.div key="result" {...anim}>
+          <m.div key="result" {...anim}>
             <h3 ref={headingRef} tabIndex={-1} className="font-display text-3xl font-extrabold uppercase outline-none">
               {s.resultH}
             </h3>
@@ -149,9 +150,9 @@ export function LabelFinder({
                 {s.restart}
               </button>
             </div>
-          </motion.div>
+          </m.div>
         ) : (
-          <motion.fieldset key={step} {...anim} className="min-w-0">
+          <m.fieldset key={step} {...anim} className="min-w-0">
             <legend className="contents">
               <span className="kicker block">{s.stepOf.replace("{n}", String(step + 1))}</span>
               <h3
@@ -186,9 +187,18 @@ export function LabelFinder({
                 {s.back}
               </button>
             )}
-          </motion.fieldset>
+          </m.fieldset>
         )}
       </AnimatePresence>
     </div>
+  );
+}
+
+/** Envoltura con carga diferida de Motion. */
+export function LabelFinder(props: Parameters<typeof LabelFinderInner>[0]) {
+  return (
+    <Lazy>
+      <LabelFinderInner {...props} />
+    </Lazy>
   );
 }

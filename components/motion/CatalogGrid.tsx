@@ -1,7 +1,8 @@
 "use client";
 
-import { AnimatePresence, LayoutGroup, motion, useReducedMotion } from "motion/react";
+import { AnimatePresence, LayoutGroup, m, useReducedMotion } from "motion/react";
 import { useState, type ReactNode } from "react";
+import { Lazy } from "./Lazy";
 
 type Item = { id: string; category: string; node: ReactNode; span?: "wide" | "full" };
 
@@ -9,7 +10,7 @@ type Item = { id: string; category: string; node: ReactNode; span?: "wide" | "fu
  * Catálogo con filtro por tipo y transición de layout.
  * Las tarjetas llegan renderizadas desde el servidor (todas visibles en el HTML).
  */
-export function CatalogGrid({
+function CatalogGridInner({
   items,
   filters,
   filterLabel,
@@ -39,7 +40,7 @@ export function CatalogGrid({
               }`}
             >
               {on && (
-                <motion.span
+                <m.span
                   layoutId="catalog-filter"
                   className="absolute inset-0 rounded-full bg-brand"
                   transition={spring}
@@ -51,10 +52,10 @@ export function CatalogGrid({
           );
         })}
       </div>
-      <motion.ul layout className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
+      <m.ul layout className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
         <AnimatePresence mode="popLayout" initial={false}>
           {visible.map((i) => (
-            <motion.li
+            <m.li
               key={i.id}
               layout
               initial={reduce ? false : { opacity: 0, scale: 0.96 }}
@@ -64,10 +65,19 @@ export function CatalogGrid({
               className={i.span === "wide" ? "sm:col-span-2" : i.span === "full" ? "sm:col-span-2 lg:col-span-4" : undefined}
             >
               {i.node}
-            </motion.li>
+            </m.li>
           ))}
         </AnimatePresence>
-      </motion.ul>
+      </m.ul>
     </LayoutGroup>
+  );
+}
+
+/** Envoltura con carga diferida de Motion. */
+export function CatalogGrid(props: Parameters<typeof CatalogGridInner>[0]) {
+  return (
+    <Lazy>
+      <CatalogGridInner {...props} />
+    </Lazy>
   );
 }
