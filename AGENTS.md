@@ -96,7 +96,10 @@ propuesta-diseno/            propuesta de diseño aprobada (A), textos v2 y cues
 ## Estado de calidad (build local, Lighthouse móvil, 23 nov 2026)
 - Rendimiento 95–98 · Accesibilidad 100 · Buenas prácticas 100 · SEO 100. LCP 2,3–2,4 s, CLS ≤ 0,001.
 - Las 26 URL del sitemap tienen un H1, canonical, hreflang en/es/x-default y JSON-LD que se puede leer.
-- Pendiente: validar en el validador de schema.org y en la prueba de resultados enriquecidos de Google cuando haya una URL pública.
+- En vivo (https://liji-tech.vercel.app, 24 nov 2026, Lighthouse móvil desde el contenedor de desarrollo): accesibilidad, buenas prácticas y SEO 100 en todas; rendimiento 85–91 en la portada, 92 en térmicas y 95 en fábrica. LCP 2,1–2,5 s, CLS 0. El TBT varía de 290 a 540 ms entre corridas iguales porque depende de la CPU del contenedor: medir también con PageSpeed Insights.
+- Ya aplicado para rendimiento: sombras dentro del SVG (sin filtros `drop-shadow`), `content-visibility: auto` en secciones bajas de la portada y Motion con `LazyMotion` + `m`.
+- Si la portada sigue por debajo de 90 en PageSpeed Insights: lo siguiente es aligerar la cinta de rollo (menos etiquetas) y cargar el buscador y el armador solo cuando se acercan a la pantalla.
+- Pendiente: validar en el validador de schema.org y en la prueba de resultados enriquecidos de Google.
 
 ## Pendientes del cliente
 - [ ] **Dominio** (`NEXT_PUBLIC_SITE_URL`). Mientras no exista, el sitio usa la URL de producción de Vercel.
